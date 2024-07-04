@@ -1,0 +1,14 @@
+.menu--main {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.menu--main li a {
+  display: block;
+  text-decoration: none; /* Уберите оформление текста ссылки */
+}
+
+.menu--main li a span {
+  display: none; /* Скрыть текст */
+}
