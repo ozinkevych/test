@@ -1,5 +1,19 @@
 global:
   css:
+    theme:
+      "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap": { external: true }
+      css/elements.css: {}
     component:
       css/header.css: {}
-
+      css/footer.css: {}
+      css/global.css: {}
+      css/main-menu.css: {}
+      css/region.css: {}
+      css/pager.css: {}
+      css/node.css: {}
+      css/recipe.css: {}
+      css/layout.css: {}
+      css/commerce.css: {}
+      css/form.css: {}
+      css/views.css: {}
+      css/fasets.css: {}

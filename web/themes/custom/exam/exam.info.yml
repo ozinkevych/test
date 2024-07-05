@@ -5,7 +5,9 @@ core_version_requirement: ^10
 base theme: claro
 
 
-
+stylesheets-remove:
+  - '@claro/css/components/menu.css'
+  - '@claro/css/components/pager.css'
 
 regions:
   header: Header

@@ -1,14 +1,9 @@
-.menu--main {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+.node--view-mode-teaser h2 {
+  display: none; }
 
-.menu--main li a {
-  display: block;
-  text-decoration: none; /* Уберите оформление текста ссылки */
-}
+.block-exam-abaut h2,
+.block-system h2,
+.views-element-container h2 {
+  display: none; }
 
-.menu--main li a span {
-  display: none; /* Скрыть текст */
-}
+/*# sourceMappingURL=header.css.map */
