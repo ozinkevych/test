@@ -5,15 +5,4 @@ global:
       css/elements.css: {}
     component:
       css/header.css: {}
-      css/footer.css: {}
-      css/global.css: {}
-      css/main-menu.css: {}
-      css/region.css: {}
-      css/pager.css: {}
-      css/node.css: {}
-      css/recipe.css: {}
-      css/layout.css: {}
-      css/commerce.css: {}
-      css/form.css: {}
-      css/views.css: {}
-      css/fasets.css: {}
+

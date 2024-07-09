@@ -1,0 +1,90 @@
+footer {
+  background-color: #373645!important;
+}
+
+.region-footer-first {
+  width: 100%!important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Вирівнює елементи по вертикалі */
+
+  .block-content-logo {
+    width: auto;
+    height: auto;
+    border: none;
+    padding: 0 12px;
+    margin: 0;
+    display: flex;
+    text-align: center;
+    flex-direction: column; /* Розташовує внутрішні елементи по вертикалі */
+    align-items: flex-start; /* Вирівнює внутрішні елементи по лівому краю */
+    justify-content: center; /* Центрує внутрішні елементи по вертикалі */
+
+    h2{
+      font-size: 30px;
+      margin: 0;
+      padding: 0;
+      color: #6E9BCA;
+      font-weight: normal;
+    }
+
+    p {
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+
+  .block-content-social_media {
+    width: 200px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    ul {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      list-style: none; /* Прибирає маркери зі списку */
+      justify-content: space-between; /* Розташовує елементи з простором між ними */
+    }
+
+    li {
+      display: inline-block; /* Відображає елементи списку в ряд */
+      margin-right: 10px; /* Додає відступ між елементами */
+    }
+
+    a {
+      text-decoration: none; /* Прибирає підкреслення */
+      color: inherit; /* Встановлює колір посилання такий самий, як у батьківського елемента */
+    }
+  }
+}
+.social-media-link-icon--twitter {
+  display: inline-block;
+  width: 24px; /* Ширина зображення */
+  height: 24px; /* Висота зображення */
+  background: url('../img/social-icons/twit.png') no-repeat center center;
+  background-size: cover; /* Масштабування зображення */
+}
+
+.social-media-link-icon--instagram {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url('../img/social-icons/in.png') no-repeat center center;
+  background-size: cover;
+}
+
+.social-media-link-icon--facebook {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url('../img/social-icons/fb.png') no-repeat center center;
+  background-size: cover;
+}
+
+/* Прибирає текстове змістовне наповнення, щоб залишилися лише іконки */
+.social-media-link-icon--twitter span,
+.social-media-link-icon--instagram span,
+.social-media-link-icon--facebook span {
+  display: none;
+}

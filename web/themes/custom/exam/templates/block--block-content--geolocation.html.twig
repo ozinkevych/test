@@ -1,0 +1,7 @@
+{% set address = content.field_address['#items'].first.value %}
+{% set api_key = 'YOUR_GOOGLE_MAPS_API_KEY' %}
+{% set map_url = 'https://maps.googleapis.com/maps/api/staticmap?center=' ~ address | url_encode ~ '&zoom=15&size=600x300&maptype=roadmap&markers=color:red%7C' ~ address | url_encode ~ '&key=' ~ api_key %}
+
+<div class="map-container">
+  <img src="{{ map_url }}" alt="Map for {{ address }}">
+</div>

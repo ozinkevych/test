@@ -1,0 +1,48 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the SASS Starterkit subtheme.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_system_theme_settings_alter() for settings form.
+ *
+ * Replace Barrio setting options with subtheme ones.
+ *
+ * Example on how to alter theme settings form
+ */
+function exam1_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+  $form['components']['navbar']['bootstrap_barrio_navbar_top_background']['#options'] = [
+    'bg-primary' => t('Primary'),
+    'bg-secondary' => t('Secondary'),
+    'bg-light' => t('Light'),
+    'bg-dark' => t('Dark'),
+    'bg-white' => t('White'),
+    'bg-transparent' => t('Transparent'),
+  ];
+  $form['components']['navbar']['bootstrap_barrio_navbar_background']['#options'] = [
+    'bg-primary' => t('Primary'),
+    'bg-secondary' => t('Secondary'),
+    'bg-light' => t('Light'),
+    'bg-dark' => t('Dark'),
+    'bg-white' => t('White'),
+    'bg-transparent' => t('Transparent'),
+  ];
+}
+function your_theme_preprocess_social_media_links_platforms(&$variables) {
+  foreach ($variables['platforms'] as &$platform) {
+    // Замінюємо SVG іконку на зображення у вашому випадку.
+    switch ($platform['id']) {
+      case 'facebook':
+        $platform['image'] = 'themes/custom/exam1/social-icons/Social/fb.png'; // Шлях до вашого зображення Facebook.
+        break;
+      case 'twitter':
+        $platform['image'] = 'themes/custom/your_theme/img/twitter.png'; // Шлях до вашого зображення Twitter.
+        break;
+      // Додайте інші кейси для інших соціальних мереж, які ви використовуєте.
+    }
+  }
+}
