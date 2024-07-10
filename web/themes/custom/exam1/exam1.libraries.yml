@@ -4,12 +4,15 @@ global-styling:
     js/global.js: {}
   css:
     component:
-
-      css/colors.css: {}
-    theme:
-      css/style.css: {}
+      css/elements.css: {}
+      css/style.css: { }
       css/header.css: { }
-      css/footer.css: {}
+      css/footer.css: { }
+      css/colors.css: {}
+      css/global.css: {}
+
+    theme:
+      "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap": {}
 bootstrap:
   js:
     /libraries/popper.js/dist/umd/popper.min.js: { weight: -19 }

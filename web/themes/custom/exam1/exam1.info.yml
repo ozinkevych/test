@@ -9,9 +9,13 @@ libraries:
   - exam1/bootstrap_cdn
   - exam1/global-styling
 
+
 regions:
-  header: Header
+  branding: Branding
   primary_menu: 'Primary menu'
+  social_icons: 'Social icons'
+  search: Search
+  banner: Banner
   highlighted: Highlighted
   content: Content
   footer_first: 'Footer first'

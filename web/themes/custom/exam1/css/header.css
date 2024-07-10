@@ -1,33 +1,75 @@
-.navbar {
-  display: flex;
-  justify-content: space-between; }
-  .navbar .block-content-logo {
-    background-color: #373645;
-    text-align: center; }
-    .navbar .block-content-logo h2 {
-      font-size: 34px;
-      padding-top: 15px;
-      color: #6E9BCA; }
-    .navbar .block-content-logo .content p {
-      color: white;
-      padding-bottom: 15px;
-      padding-right: 15px;
-      padding-left: 15px;
-      font-size: 14px; }
-  .navbar .block-content-social_media ul {
-    display: flex; }
-    .navbar .block-content-social_media ul li {
-      padding-right: 20px; }
+#header {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+  z-index: 101;
+  background: transparent; }
 
-.menu-level-0 {
-  margin: 0;
+.navbar {
+  background-color: white;
+  padding: 0; }
+
+.site-header {
   display: flex; }
-  .menu-level-0 li {
-    padding-right: 20px;
-    list-style: none; }
-    .menu-level-0 li a {
-      text-decoration: none;
-      color: #97979F;
-      text-transform: uppercase; }
+  .site-header .region-branding {
+    padding: 20px 10px;
+    text-align: center;
+    background-color: #373645; }
+    .site-header .region-branding h2 {
+      color: #6D9AC8;
+      font-size: 28px;
+      padding: 0 !important; }
+    .site-header .region-branding p {
+      margin: 0;
+      font-size: 12px;
+      color: #B1B5BE; }
+  .site-header .menu--main .menu-level-0 {
+    display: flex;
+    margin: 0 !important; }
+    .site-header .menu--main .menu-level-0 li {
+      padding: 0 15px; }
+      .site-header .menu--main .menu-level-0 li a {
+        list-style: none;
+        color: #4B4A58;
+        text-decoration: none;
+        text-transform: uppercase; }
+  .site-header .social-icons {
+    padding-top: 6px;
+    padding-left: 20px; }
+    .site-header .social-icons ul {
+      margin: 0;
+      display: flex; }
+  .site-header .search-form {
+    display: flex; }
+    .site-header .search-form .form-item-keys {
+      margin: 0 !important; }
+      .site-header .search-form .form-item-keys input {
+        height: 40px;
+        width: 130px;
+        border-radius: 0; }
+    .site-header .search-form .form-actions {
+      border-radius: 0;
+      margin: 0 !important; }
+      .site-header .search-form .form-actions button {
+        border-radius: 0; }
+  .site-header #edit-submit::before {
+    content: "\f002";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    color: #888;
+    font-size: 18px;
+    margin-bottom: 5px; }
+  .site-header #edit-submit {
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 1px solid #ccc;
+    background-color: transparent; }
+
+@media all and (max-width: 1400px) {
+  .navbar-expand-lg .row {
+    align-items: center; } }
 
 /*# sourceMappingURL=header.css.map */

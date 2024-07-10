@@ -1,0 +1,43 @@
+body, html{
+  padding: 0;
+  margin: 0;
+}
+body{
+  width: 100%;
+  overflow-y: scroll;
+}
+
+img{
+  max-width: 100% !important;
+  height: auto;
+
+}
+*{
+  box-sizing: border-box;
+}
+p, h1, h2, h3, h4, h5, ul, ol{
+  margin-top: 0;
+}
+h1{
+  font-size: 40px;
+}
+h2{
+  font-size: 32px;
+}
+h3{
+  font-size: 25px;
+}
+h4{
+  font-size: 20px;
+}
+p{
+  margin-bottom: 20px;
+}
+ul, ol {
+  list-style-type: none !important;
+  padding-left: 0 !important;
+}
+a{
+  padding: 0;
+  margin: 0;
+}

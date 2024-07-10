@@ -3,14 +3,11 @@
  * Global utilities.
  *
  */
-(function (Drupal) {
+document.addEventListener('DOMContentLoaded', function() {
+  var toggler = document.querySelector('.navbar-toggler');
+  var menu = document.querySelector('.navbar-collapse');
 
-  'use strict';
-
-  Drupal.behaviors.exam1 = {
-    attach: function (context, settings) {
-
-    }
-  };
-
-})(Drupal);
+  toggler.addEventListener('click', function() {
+    menu.classList.toggle('show');
+  });
+});

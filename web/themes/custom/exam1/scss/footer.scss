@@ -16,20 +16,19 @@ footer {
     margin: 0;
     display: flex;
     text-align: center;
-    flex-direction: column; /* Розташовує внутрішні елементи по вертикалі */
-    align-items: flex-start; /* Вирівнює внутрішні елементи по лівому краю */
-    justify-content: center; /* Центрує внутрішні елементи по вертикалі */
+    flex-direction: column;
+    justify-content: center;
 
     h2{
-      font-size: 30px;
+      font: 28px/1.4 "Inter", sans-serif !important;
       margin: 0;
       padding: 0;
       color: #6E9BCA;
-      font-weight: normal;
+      font-weight: 500!important;
     }
 
     p {
-      font-size: 14px;
+      font: 12px/1.4 "Inter", sans-serif !important;
       margin: 0;
     }
   }
@@ -39,17 +38,18 @@ footer {
     border: none;
     margin: 0;
     padding: 0;
+    justify-content: right;
     ul {
-      display: flex;
       margin: 0;
       padding: 0;
-      list-style: none; /* Прибирає маркери зі списку */
-      justify-content: space-between; /* Розташовує елементи з простором між ними */
+      list-style: none;
     }
 
     li {
       display: inline-block; /* Відображає елементи списку в ряд */
-      margin-right: 10px; /* Додає відступ між елементами */
+      margin-right: 10px;
+      padding: 0!important;
+
     }
 
     a {
@@ -60,31 +60,59 @@ footer {
 }
 .social-media-link-icon--twitter {
   display: inline-block;
-  width: 24px; /* Ширина зображення */
-  height: 24px; /* Висота зображення */
+  width: 30px; /* Ширина зображення */
+  height: 30px; /* Висота зображення */
   background: url('../img/social-icons/twit.png') no-repeat center center;
   background-size: cover; /* Масштабування зображення */
 }
 
 .social-media-link-icon--instagram {
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   background: url('../img/social-icons/in.png') no-repeat center center;
   background-size: cover;
 }
 
-.social-media-link-icon--facebook {
+.social-media-link-icon--facebook, {
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   background: url('../img/social-icons/fb.png') no-repeat center center;
   background-size: cover;
 }
 
-/* Прибирає текстове змістовне наповнення, щоб залишилися лише іконки */
 .social-media-link-icon--twitter span,
 .social-media-link-icon--instagram span,
 .social-media-link-icon--facebook span {
   display: none;
+}
+body{
+  font: 18px/1.4 "Inter", sans-serif !important;
+}
+.social-media-links--platforms{
+  text-align: right;
+}
+.social-media-links--platforms li {
+  margin: 0 !important;
+}
+
+.social-media-links--platforms li + li {
+  padding-left: 10px;
+}
+@media all and (max-width: 388px) {
+  .region-footer-first{
+    align-items: center;
+    .block-content-logo{
+      margin: 0 auto!important;
+    }
+    .block-content-social_media{
+      margin: 0 auto;
+      .social-media-links--platforms{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+      }
+    }
+  }
 }

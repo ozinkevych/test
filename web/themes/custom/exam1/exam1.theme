@@ -34,7 +34,6 @@ function exam1_form_system_theme_settings_alter(&$form, FormStateInterface $form
 }
 function your_theme_preprocess_social_media_links_platforms(&$variables) {
   foreach ($variables['platforms'] as &$platform) {
-    // Замінюємо SVG іконку на зображення у вашому випадку.
     switch ($platform['id']) {
       case 'facebook':
         $platform['image'] = 'themes/custom/exam1/social-icons/Social/fb.png'; // Шлях до вашого зображення Facebook.
