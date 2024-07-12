@@ -4,13 +4,13 @@
 
 .social-media-link-icon--twitter {
   display: inline-block;
-  width: 24px; /* Ширина зображення */
-  height: 24px; /* Висота зображення */
+  width: 24px;
+  height: 24px;
   background: url('../img/social-icons/twit.png') no-repeat center center;
-  background-size: cover; /* Масштабування зображення */
+  background-size: cover;
 }
 
-.social-media-link-icon--instagram {
+.social-media-link-icon--linkedin {
   display: inline-block;
   width: 24px;
   height: 24px;
@@ -27,7 +27,7 @@
 }
 
 .social-media-link-icon--twitter span,
-.social-media-link-icon--instagram span,
+.social-media-link-icon--linkedin span,
 .social-media-link-icon--facebook span {
   display: none;
 }

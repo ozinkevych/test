@@ -39,26 +39,20 @@ footer {
       list-style: none; }
     .region-footer-first .block-content-social_media li {
       display: inline-block;
-      /* Відображає елементи списку в ряд */
       margin-right: 10px;
       padding: 0 !important; }
     .region-footer-first .block-content-social_media a {
       text-decoration: none;
-      /* Прибирає підкреслення */
-      color: inherit;
-      /* Встановлює колір посилання такий самий, як у батьківського елемента */ }
+      color: inherit; }
 
 .social-media-link-icon--twitter {
   display: inline-block;
   width: 30px;
-  /* Ширина зображення */
   height: 30px;
-  /* Висота зображення */
   background: url("../img/social-icons/twit.png") no-repeat center center;
-  background-size: cover;
-  /* Масштабування зображення */ }
+  background-size: cover; }
 
-.social-media-link-icon--instagram {
+.social-media-link-icon--linkedin {
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -73,12 +67,9 @@ footer {
   background-size: cover; }
 
 .social-media-link-icon--twitter span,
-.social-media-link-icon--instagram span,
+.social-media-link-icon--linkedin span,
 .social-media-link-icon--facebook span {
   display: none; }
-
-body {
-  font: 18px/1.4 "Inter", sans-serif !important; }
 
 .social-media-links--platforms {
   text-align: right; }

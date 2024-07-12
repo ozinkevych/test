@@ -1,0 +1,19 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px; }
+  .pagination li {
+    padding: 0;
+    margin: 0; }
+  .pagination .active {
+    background-color: #CECECE;
+    border-radius: 50%; }
+  .pagination .page-link {
+    padding: 2px 11px;
+    text-decoration: none;
+    color: inherit;
+    background: none;
+    border: none;
+    font: inherit; }
+
+/*# sourceMappingURL=pagination.css.map */

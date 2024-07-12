@@ -1,0 +1,34 @@
+{#
+Файл шаблону: taxonomy-term.html.twig
+Опис: Виводиться, коли відображається окремий термін таксономії.
+#}
+
+{%
+  set classes = [
+  'taxonomy-term',
+  'taxonomy-term--' ~ vocabulary_machine_name,
+  'taxonomy-term--' ~ term_id,
+]
+%}
+
+{# Додавання класу для категорії таксономії #}
+{% if term.name.0.value == 'Web development' %}
+  {% set classes = classes|merge(['taxonomy-term--web-development']) %}
+{% elseif term.name.0.value == 'PHP development' %}
+  {% set classes = classes|merge(['taxonomy-term--php-development']) %}
+{% elseif term.name.0.value == 'App development' %}
+  {% set classes = classes|merge(['taxonomy-term--app-development']) %}
+{% elseif term.name.0.value == 'Drupal' %}
+  {% set classes = classes|merge(['taxonomy-term--drupal']) %}
+{% endif %}
+
+<div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  <h1{{ title_attributes }}>{{ label }}</h1>
+  {{ title_suffix }}
+
+  {# Вміст терміну таксономії #}
+  <div class="content">
+    {{ content }}
+  </div>
+</div>

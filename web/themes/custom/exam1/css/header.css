@@ -1,13 +1,5 @@
-#header {
-  position: absolute;
-  top: 20%;
-  left: 0;
-  right: 0;
-  z-index: 101;
-  background: transparent; }
-
 .navbar {
-  background-color: white;
+  background-color: #FFFFFF;
   padding: 0; }
 
 .site-header {
@@ -17,13 +9,13 @@
     text-align: center;
     background-color: #373645; }
     .site-header .region-branding h2 {
-      color: #6D9AC8;
+      color: #6E9BCA;
       font-size: 28px;
       padding: 0 !important; }
     .site-header .region-branding p {
       margin: 0;
       font-size: 12px;
-      color: #B1B5BE; }
+      color: #CECECE; }
   .site-header .menu--main .menu-level-0 {
     display: flex;
     margin: 0 !important; }
@@ -31,7 +23,7 @@
       padding: 0 15px; }
       .site-header .menu--main .menu-level-0 li a {
         list-style: none;
-        color: #4B4A58;
+        color: #373645;
         text-decoration: none;
         text-transform: uppercase; }
   .site-header .social-icons {
@@ -57,7 +49,7 @@
     content: "\f002";
     font-family: "Font Awesome 5 Free";
     font-weight: 600;
-    color: #888;
+    color: #CECECE;
     font-size: 18px;
     margin-bottom: 5px; }
   .site-header #edit-submit {
@@ -65,7 +57,7 @@
     width: 40px;
     height: 40px;
     padding: 0;
-    border: 1px solid #ccc;
+    border: 1px solid #CECECE;
     background-color: transparent; }
 
 @media all and (max-width: 1400px) {

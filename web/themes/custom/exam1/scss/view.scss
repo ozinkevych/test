@@ -1,0 +1,244 @@
+@import "variables";
+@import "mixin";
+.views-element-container{
+  h2{
+    color: $violet;
+    text-align: center;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    &:before{
+      content: "";
+      flex: 1;
+      border-bottom: 0.2px solid $gray;
+      margin-right: $gutterM;
+    }
+    &:after{
+      content: "";
+      flex: 1;
+      border-bottom: 0.2px solid $gray;
+      margin-left: $gutterM;
+    }
+  }
+  .block-services{
+    margin-top: $gutterM!important;
+    text-align: center;
+    .views-field-field-image-services{
+      img{
+        padding-bottom: $gutterM;
+      }
+    }
+    .views-field-title{
+      margin-bottom: $gutterS;
+      .field-content{
+        @include title_view
+      }
+    }
+    .views-field-body{
+      div{
+        text-transform: uppercase;
+        font-size: 12px;
+        color: $gray;
+      }
+      padding-bottom: $gutterM;
+    }
+    .views-field-view-node {
+      a {
+        background-color: $blue;
+        @include button;
+      }
+    }
+  }
+  .block-project{
+    padding-top: 50px;
+    text-align: center;
+
+    .views-field-field-image{
+      background-color: $white;
+      img{
+        width: 100%;
+        height: auto;
+        padding-bottom: $gutterS;
+      }
+    }
+    .views-field-view-node{
+      background-color: $white;
+      padding-bottom: $gutterS;
+      border-bottom: 1px black solid;
+      a{
+        @include button;
+        background-color: $violet;
+      }
+    }
+    .views-field-title{
+      background-color: $white;
+      padding-bottom: $gutterS;
+      @include title_view
+    }
+    .category-{
+      &Web{
+        @include text_category;
+        background-color: $white;
+        color: $color-web-development;
+      }
+      &PHP{
+        background-color: $white;
+        @include text_category;
+        color: $color-php-development;
+      }
+      &App{
+        background-color: $white;
+        @include text_category;
+        color: $color-app-dewelopment;
+      }
+      background-color: $white;
+      &Drupal{
+        @include text_category;
+        color: $color-drupal;
+      }
+    }
+  }
+  .node--type-team-member{
+    border-bottom: none;
+    header{
+      display: none;
+    }
+    .field--name-field-image{
+      width: 100%;
+      img{
+        width: 100%;
+        height: auto;
+        margin-bottom: $gutter;
+      }
+      margin: 0;
+    }
+    .block-field-blocknodeteam-membertitle{
+
+      text-align: center;
+      .field--name-title{
+        padding: 0!important;
+        @include title_view;
+      }
+    }
+    .block-field-blocknodeteam-memberfield-position{
+      text-align: center;
+      .field--name-field-position{
+        text-transform: uppercase;
+        font-size: 12px;
+        color: $gray;
+        margin-bottom: 5px;
+      }
+    }
+
+    .node-readmore{
+      margin: 0 auto;
+      text-align: center;
+      a {
+        visibility: hidden;
+        position: relative;
+      }
+    }
+
+    .node-readmore a::before {
+      content: "Look at me";
+      visibility: visible;
+      position: absolute;
+      top: 0;
+      left: 0;
+      @include button;
+      width: 110px;
+      background-color: $violet;
+    }
+
+  }
+
+}
+.layout--onecol{
+  margin-bottom: $gutterM;
+}
+.layout--twocol-section{
+  .social-media-links--platforms{
+    li{
+      padding: 0 0 0 5px;
+    }
+  }
+  .like--wrapper{
+    justify-content: center;
+    display: flex;
+    .like-form{
+      label{
+        i{
+          padding: 0 5px 5px 0;
+        }
+        span{
+          display: none;
+        }
+      }
+      span{
+        display: none;
+      }
+
+    }
+  }
+}
+.block-views-blockproject-block-1 {
+  position: relative;
+  z-index: 1;
+}
+
+.block-views-blockproject-block-1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background: repeating-linear-gradient(
+      -45deg,
+      #ffffff,
+      #ffffff 10px,
+      #f0f0f0 5px,
+      #f0f0f0 12px
+  );
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.view-news{
+  .article-preview{
+    display: flex;
+  }
+  .article-content{
+    .article-meta{
+      display: flex;
+      .article-author{
+        .category{
+          display: flex;
+        }
+        .field--name-field-autor{
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .views-element-container{
+    .views-field-title{
+      .field-content{
+        font-size: 20px!important;
+      }
+    }
+  }
+}
+@media all and (max-width: 992px) {
+  .views-element-container{
+    .views-row{
+      margin-bottom: $gutterM;
+    }
+  }
+}

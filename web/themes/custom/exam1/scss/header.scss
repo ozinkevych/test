@@ -1,13 +1,7 @@
-#header {
-  position: absolute;
-  top: 20%;
-  left: 0;
-  right: 0;
-  z-index: 101;
-  background: transparent;
-}
+@import "variables";
+
 .navbar{
-  background-color: white;
+  background-color: $white;
   padding: 0;
 }
 .site-header{
@@ -15,16 +9,16 @@
   .region-branding{
     padding: 20px 10px;
     text-align: center;
-    background-color: #373645;
+    background-color: $violet;
     h2{
-      color: #6D9AC8;
+      color: $blue;
       font-size: 28px;
       padding: 0!important;
     }
     p{
       margin: 0;
       font-size: 12px;
-      color: #B1B5BE;
+      color: $gray;
     }
   }
   .menu--main{
@@ -35,7 +29,7 @@
         padding: 0 15px;
         a{
           list-style: none;
-          color: #4B4A58;
+          color: $violet;
           text-decoration: none;
           text-transform: uppercase;
         }
@@ -44,7 +38,7 @@
   }
   .social-icons{
     padding-top: 6px;
-    padding-left: 20px;
+    padding-left: $gutterM;
     ul{
       margin: 0;
       display: flex;
@@ -73,7 +67,7 @@
     content: "\f002";
     font-family: "Font Awesome 5 Free";
     font-weight: 600;
-    color: #888;
+    color: $gray;
     font-size: 18px;
     margin-bottom: 5px;
   }
@@ -83,7 +77,7 @@
     width: 40px;
     height: 40px;
     padding: 0;
-    border: 1px solid #ccc;
+    border: 1px solid $gray;
     background-color: transparent;
   }
 }
@@ -94,3 +88,4 @@
     }
   }
 }
+
