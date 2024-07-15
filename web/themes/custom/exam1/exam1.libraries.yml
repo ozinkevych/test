@@ -12,6 +12,8 @@ global-styling:
       css/global.css: {}
       css/view.css: {}
       css/pagination.css: {}
+      css/about.css: {}
+      сss/banner.css: {}
 
     theme:
       "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap": {}
@@ -41,3 +43,10 @@ color.preview:
     color/preview.js: {}
   dependencies:
     - color/drupal.color
+read-more:
+  js:
+    js/read-more.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/once

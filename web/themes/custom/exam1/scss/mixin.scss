@@ -1,18 +1,42 @@
 @import "variables";
 @mixin button {
+  text-align: center;
   text-decoration: none;
   text-transform: uppercase !important;
   padding: 5px 10px;
   color: $white;
-  font-size: 14px;
+  font-size: 13px;
 }
 @mixin title_view{
   color: $violet;
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 32px;
+  text-weight: bold;
 }
 @mixin text_category{
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 13px;
   padding-bottom: $gutterM;
 }
+@mixin background {
+  content: '';
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  right: 50%;
+  bottom: -10%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background: repeating-linear-gradient(
+      -45deg,
+      #ffffff,
+      #ffffff 8.5px, /* Початковий колір і відстань до наступного */
+      #DBDBDB 1.5px, /* Товщина ліній */
+      #DBDBDB 9.5px /* Відстань між лініями */
+  );
+  background-size: cover;
+  background-position: center;
+  z-index: -1
+}
+
+

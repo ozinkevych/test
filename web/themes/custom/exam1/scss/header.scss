@@ -1,5 +1,8 @@
 @import "variables";
-
+#header {
+  position: relative;
+  z-index: 10;
+}
 .navbar{
   background-color: $white;
   padding: 0;
@@ -89,3 +92,23 @@
   }
 }
 
+
+#header{
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  z-index: 10; /* Забезпечує, що хедер буде зверху банера */
+}
+.field field--name-field-title{
+  position: absolute;
+  top: 50%;
+  left: 40%;
+}
+.field--name-field-banner-image {
+  position: relative;
+  z-index: 1; /* Забезпечує, що банер буде під хедером */
+  img{
+    width: 100%;
+  }
+}

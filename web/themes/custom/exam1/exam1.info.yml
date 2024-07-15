@@ -8,6 +8,7 @@ base theme: bootstrap_barrio
 libraries:
   - exam1/bootstrap_cdn
   - exam1/global-styling
+  - exam1/read-more
 
 
 regions:
