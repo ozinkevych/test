@@ -12,29 +12,49 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "owlcarousel2/owlcarousel2",
+                "version": "2.3.4",
+                "type": "drupal-library",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/OwlCarousel2/OwlCarousel2/archive/2.3.4.zip"
+                }
+            }
         }
     ],
     "require": {
         "composer/installers": "^2.0",
         "drupal/admin_toolbar": "^3.4",
-        "drupal/bootstrap_barrio": "^5.5",
+        "drupal/backup_migrate": "^5.0",
+        "drupal/cache_control_override": "^2.0",
         "drupal/core-composer-scaffold": "^10.0",
         "drupal/core-project-message": "^10.0",
         "drupal/core-recommended": "^10.0",
+        "drupal/entity": "^1.4",
+        "drupal/extrafield_views_integration": "^2.1",
         "drupal/flag": "^4.0@beta",
         "drupal/fontawesome": "^2.26",
-        "drupal/geolocation": "^3.13",
-        "drupal/like": "^2.0",
-        "drupal/likeit": "^2.2",
-        "drupal/menu_item_extras": "^3.0",
+        "drupal/js_cookie": "^1.0",
+        "drupal/owlcarousel": "^3.0",
         "drupal/paragraphs": "^1.17",
-        "drupal/simple_menu_icons": "^3.0",
-        "drupal/social_link_field": "^2.0",
+        "drupal/pathauto": "^1.13",
+        "drupal/redirect": "^1.9",
+        "drupal/search_api": "^1.35",
+        "drupal/simple_gmap": "^3.1",
+        "drupal/slick": "^3.0",
+        "drupal/slick_views": "^3.0",
         "drupal/social_media_links": "^2.9",
-        "drupal/views_field_view": "^1.0@beta",
+        "drupal/splide": "^2.0",
+        "drupal/swiper_formatter": "^1.0",
         "drupal/views_slideshow": "^5.0",
         "drupal/webform": "^6.2",
-        "drush/drush": "^11.4"
+        "drush/drush": "^12.5",
+        "owlcarousel2/owlcarousel2": "^2.3",
+        "twbs/bootstrap": "^5.3"
     },
     "conflict": {
         "drupal/drupal": "*"

@@ -1,0 +1,172 @@
+@import "variables";
+@import "mixin";
+
+.block-news-full{
+  .views-exposed-form{
+    &:before{
+      display: none;
+    }
+  }
+}
+
+
+.block-views-blockour-team-block-1{
+  .view-header{
+    padding: 0!important;
+    &:before, &:after{
+      display: none;
+    }
+  }
+}
+.view-our-team{
+  .view-header{
+    @include title;
+  }
+  margin-bottom: 80px;
+  h2{
+    padding-top: 80px!important;
+  }
+  .node--type-our-team {
+    border-bottom: none;
+    .node-title-block {
+      display: none;
+    }
+    .field--name-field-image-media {
+      width: 100%;
+      img {
+        filter: grayscale(100%);
+        width: 100%;
+        height: auto;
+        margin-bottom: $gutter;
+        &:hover{
+          filter: grayscale(0%);
+        }
+      }
+
+      margin: 0;
+    }
+
+    .block-field-blocknodeour-teamtitle {
+
+      text-align: center;
+
+      .field--name-title {
+        line-height: 0;
+        padding: 0 !important;
+        @include title_view;
+      }
+    }
+
+    .block-field-blocknodeour-teamfield-position {
+      text-align: center;
+
+      .field--name-field-position {
+        text-transform: uppercase;
+        font-size: 12px;
+        color: $gray;
+        margin-bottom: 5px;
+      }
+    }
+    .block-extra-field-blocknodeour-teamlinks {
+      margin-bottom: $gutterM;
+
+      .inline__links {
+        display: flex;
+        justify-content: center;
+
+        .node-readmore {
+          padding-right: 35px;
+
+          a {
+            visibility: hidden;
+            position: relative;
+
+            &:before {
+              content: "Look at me";
+              visibility: visible;
+              position: absolute;
+              top: 0;
+              left: 0;
+              @include button;
+              width: 110px;
+              background-color: $violet;
+            }
+
+            &:hover:before {
+              color: $violet;
+              background-color: $white;
+              border: 3px solid $violet;
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+
+  .layout__region--first{
+    .content{
+      display: flex;
+      justify-content: end;
+      .social-media-links--platforms{
+        display: inline-block;
+        li{
+          padding: 0 0 0 5px;
+        }
+      }
+    }
+
+  }
+  .layout__region--second{
+    .flag-like{
+      display: flex;
+      justify-content: center;
+      padding-top: 3px;
+      a{
+        text-decoration: none;
+        svg{
+          color: $gray;
+          &:hover{
+            color:$red;
+          }
+        }
+      }
+    }
+    .action-unflag{
+      a{
+        text-decoration: none;
+        svg{
+          color: $red;
+        }
+      }
+    }
+  }
+
+}
+@media all and (max-width: 991px) {
+  .view-our-team{
+    .layout__region--first {
+      .content {
+        justify-content: center;
+      }
+      }
+    margin: 0!important;
+    .node--type-page.node--view-mode-full{
+      .layout--twocol-section {
+        align-items: center;
+        flex-direction: row!important;
+      }
+  }
+
+    .node--view-mode-teaser {
+      margin: 0!important;
+      padding: 0!important;
+    }
+}
+}
+@media all and (max-width: 640px) {
+  .layout--twocol-section {
+    flex-wrap: nowrap;
+  }
+}

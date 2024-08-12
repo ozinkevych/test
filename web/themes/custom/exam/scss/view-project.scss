@@ -1,0 +1,103 @@
+@import "variables";
+@import "mixin";
+
+
+.block-views-blockproject-block-1 {
+  position: relative;
+  z-index: 2;
+
+  h2 {
+    font-weight: normal !important;
+  }
+
+  .block-project {
+    position: relative;
+    &:before{
+      @include background;
+
+    }
+    .view-header {
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+
+    .views-field-view-node {
+      border-bottom: 1px solid $black;
+    }
+  }
+}
+
+.block-project {
+
+  padding-top: 80px;
+  padding-bottom: 100px;
+  text-align: center;
+
+  .views-field-field-image-media {
+    background-color: $white;
+    img {
+      width: 100%;
+      height: auto;
+      padding-bottom: $gutterS;
+    }
+  }
+
+  .views-field-view-node {
+    background-color: $white;
+    padding-bottom: $gutterS;
+    a {
+      @include button;
+      background-color: $violet;
+      &:hover {
+        color: $violet;
+        background-color: $white;
+        border: 3px solid $violet;
+      }
+    }
+  }
+
+  .views-field-title {
+    padding-top: $gutterM;
+    line-height: 0.8;
+    background-color: $white;
+    @include title_view;
+  }
+
+  .views-field-field-category {
+    .field-content {
+      background-color: $white;
+      padding-top: $gutterS;
+      padding-bottom: 15px;
+      @include project_category;
+    }
+  }
+}
+
+.block-project-full {
+  padding: 0 !important;
+
+  .view-header {
+    @include title;
+    font-weight: 700;
+  }
+
+  .views-row {
+    padding-bottom: $gutter;
+  }
+}
+@media all and (max-width: 991px) {
+
+  .block-project-full {
+    .views-row {
+      padding: 0 12px !important;
+    }
+    }
+
+}
+@media all and (max-width: 768px) {
+  .block-project{
+    padding: $gutterM 0!important;
+  }
+}

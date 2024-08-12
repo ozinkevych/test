@@ -1,0 +1,90 @@
+@import "variables";
+footer {
+  background-color: #373645!important;
+}
+#page{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  #main-wrapper{
+    flex-grow: 1;
+  }
+}
+.region-footer-first {
+  width: 100%!important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Вирівнює елементи по вертикалі */
+
+  .block-content-brending {
+    width: auto;
+    height: auto;
+    border: none;
+    padding: 0 12px;
+    margin: 0;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+
+    .field--name-field-brend{
+      font: 28px/1.4 "Inter", sans-serif !important;
+      margin: 0;
+      padding: 0;
+      color: #6E9BCA;
+      font-weight: 500!important;
+    }
+
+    .field field--name-field-text {
+      font: 12px/1.4 "Inter", sans-serif !important;
+      margin: 0;
+    }
+  }
+
+  .block-content-social_media {
+    width: 200px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    justify-content: right;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    li {
+      display: inline-block;
+      margin-right: $gutterS;
+      padding: 0!important;
+
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}
+
+@media all and (max-width: 400px) {
+
+  .region-footer-first{
+    flex-direction: column;
+    align-items: center;
+    .block-content-logo{
+      margin: 0 auto!important;
+    }
+    .block-content-social_media{
+      margin: 0 auto;
+      .social-media-links--platforms{
+        display: flex;
+        justify-content: center;
+        padding-top: $gutterM;
+      }
+    }
+  }
+}
+

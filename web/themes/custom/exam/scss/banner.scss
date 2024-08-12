@@ -1,0 +1,109 @@
+@import "variables";
+@import "mixin";
+
+.banner {
+  position: relative;
+  width: 100vw;
+  max-width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  overflow: hidden;
+
+  .region-banner {
+    position: relative;
+  }
+
+  #block-exam-banner {
+    .field--name-field-image {
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+        object-position: center
+      }
+    }
+  }
+
+  #block-exam-bannerinfo {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    color: white;
+    z-index: 10;
+
+    .field--name-field-title {
+      font-size: 76px;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .field--name-field-subtitle {
+      line-height: 1;
+      color: $violet;
+      font-size: 48px;
+      font-weight: normal;
+      text-transform: uppercase;
+    }
+
+    .field--name-field-text-banner {
+      line-height: 1;
+      color: $blue;
+      font-size: 16px;
+      max-width: 450px;
+    }
+  }
+}
+@media all and (max-width: 1200px) {
+  .banner{
+    #block-exam-bannerinfo {
+      top: 60%;
+      .field--name-field-title {
+        font-size: 48px;
+      }
+      .field--name-field-subtitle {
+        font-size: 30px;
+      }
+      .field--name-field-text-banner{
+        max-width: 300px;
+        font-size: 12px!important;
+
+      }
+    }
+  }
+}
+@media all and (max-width: 992px) {
+  .front-page-header {
+    top: 0 !important;
+  }
+  .banner{
+    #block-exam-bannerinfo {
+      .field--name-field-title {
+        font-size: 32px;
+      }
+      .field--name-field-subtitle {
+        font-size: 20px;
+      }
+      .field--name-field-text-banner{
+        max-width: 200px;
+      }
+    }
+  }
+}
+@media all and (max-width: 700px) {
+  .banner {
+    #block-exam-banner {
+      .field--name-field-image {
+        img {
+          height: 255px !important;
+          width: 100%;
+          object-fit: cover;
+          display: block;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<div class="contact-info">
+  <h2 class="contact-info__country">{{ content.field_country }}</h2>
+  {{ content.field_address }}
+  <p class="contact-info__phone">
+    {% for item in content.field_phone['#items'] %}
+      <a href="tel:{{ item.value|replace({' ': ''}) }}" class="contact-info__phone-link">{{ item.value }}</a>{% if not loop.last %}, {% endif %}
+    {% endfor %}
+  </p>
+  <div class="contact-info__email">
+    <p>Email:</p>
+    <a href="mailto:{{ content.field_email[0]['#context'].value }}" class="contact-info__email-link">{{ content.field_email[0]['#context'].value }}</a>
+  </div>
+</div>
+

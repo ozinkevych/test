@@ -1,0 +1,44 @@
+@import "mixin";
+@import "variables";
+.block-clients-full{
+  padding-bottom: 80px;
+  .view-header {
+    @include title;
+    font-weight: 700;
+  }
+  .views-field-field-image-media{
+    padding: $gutter 0!important;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+.owl-stage{
+  display: flex;
+  align-items: center;
+  padding: 40px 0 80px 0;
+  .owl-item{
+    padding: 0 5px;
+  }
+}
+@media all and (max-width: 1200px) {
+  .owl-stage{
+    .owl-item{
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+@media all and (max-width: 991px) {
+  .owl-stage {
+    padding: $gutterM 0 40px 0;
+  }
+  .view-clients{
+    .views-row{
+      margin: 0!important;
+    }
+  }
+}
