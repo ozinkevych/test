@@ -8,7 +8,7 @@
   .node-content{
     .field--name-field-image-media {
       float: right!important;
-      margin: $gutterM 80px 80px 80px;
+      margin: $gutterM 90px 80px 90px;
 
       img {
         margin: 0;
@@ -25,10 +25,10 @@
   .node-content {
     .field--name-field-image-media {
       float: right!important;
-      margin: $gutterM 0 40px 40px;
+      margin: $gutter 0 $gutterM 45px;
       img {
         margin: 0;
-        width: 380px !important;
+        width: 400px !important;
         height: auto;
       }
     }

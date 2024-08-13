@@ -1,9 +1,13 @@
 @import "variables";
 .front-page{
   .pagination{
-    .page-link {
-      padding: 2px 11px;
+    .page-item {
+      margin: 0!important;
+      .page-link {
+        padding: 2px 12px;
+      }
     }
+
   }
 }
 
@@ -14,7 +18,7 @@
   padding-bottom: $gutterM;
   li {
     padding: 0;
-    margin: 0;
+    margin: 0 $gutterS;
   }
   .active{
     background-color: $gray;
@@ -47,7 +51,7 @@
 }
 .block-project-full, .block-clients-full, .block-news-full, .view-our-team, .block-services-full{
   .pagination{
-    margin: 0 0 60px 0;
+    margin: 30px 0 60px 0;
     padding: 0;
     .page-item {
       font-size: 24px;
@@ -62,6 +66,7 @@
   .block-project-full, .block-clients-full, .block-news-full, .view-our-team, .block-services-full {
     .pagination {
         .page-item {
+          margin: 0;
           font-size: 17px!important;
           .page-link {
             padding: 2px 11px!important;

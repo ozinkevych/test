@@ -76,6 +76,12 @@
   .block-services{
     padding: 0!important;
     margin: $gutterM 0!important;
+    .views-field-body{
+      div{
+        width: 300px;
+        margin: 0 auto;
+      }
+    }
   }
   .block-services-full{
     .views-row {

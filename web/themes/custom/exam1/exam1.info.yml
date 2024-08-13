@@ -1,0 +1,27 @@
+name: exam1
+type: theme
+description: 'Basic structure for a Bootstrap Barrio SubTheme.'
+core: 8.x
+core_version_requirement: ^8 || ^9 || ^10
+base theme: bootstrap_barrio
+
+libraries:
+  - exam1/bootstrap_cdn
+  - exam1/global-styling
+  - exam1/read-more
+
+
+regions:
+  branding: Branding
+  primary_menu: 'Primary menu'
+  social_icons: 'Social icons'
+  search: Search
+  banner: Banner
+  highlighted: Highlighted
+  content: Content
+  footer_first: 'Footer first'
+
+# Information added by Drupal.org packaging script on 2023-12-03
+version: '5.5.16'
+project: 'bootstrap_barrio'
+datestamp: 1701646129

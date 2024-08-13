@@ -14,7 +14,7 @@ footer {
   width: 100%!important;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Вирівнює елементи по вертикалі */
+  align-items: center;
 
   .block-content-brending {
     width: auto;
@@ -83,6 +83,7 @@ footer {
         display: flex;
         justify-content: center;
         padding-top: $gutterM;
+        padding-left: $gutterS!important;
       }
     }
   }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "72ef47b78d06bcd2f44b6861a986a312",
+    "content-hash": "88b985006675541e874511ab2a746d70",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1360,6 +1360,60 @@
             }
         },
         {
+            "name": "drupal/bootstrap_barrio",
+            "version": "5.5.16",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/bootstrap_barrio.git",
+                "reference": "5.5.16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap_barrio-5.5.16.zip",
+                "reference": "5.5.16",
+                "shasum": "c69cae4d197e7ae0c11acc276c9bd8a1ce1d31b7"
+            },
+            "require": {
+                "drupal/core": "^9.4 || ^10",
+                "twbs/bootstrap": "^5.0.0"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "5.5.16",
+                    "datestamp": "1701646126",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alberto Siles",
+                    "homepage": "https://www.drupal.org/user/827704",
+                    "email": "alberto@siles.pe"
+                },
+                {
+                    "name": "Ricardo.Castaneda",
+                    "homepage": "https://www.drupal.org/user/3520894"
+                },
+                {
+                    "name": "WillAcon",
+                    "homepage": "https://www.drupal.org/user/2824325"
+                }
+            ],
+            "description": "Bootstrap 5 base theme.",
+            "homepage": "https://www.drupal.org/project/bootstrap_barrio",
+            "support": {
+                "source": "https://git.drupalcode.org/project/bootstrap_barrio"
+            }
+        },
+        {
             "name": "drupal/cache_control_override",
             "version": "2.0.0",
             "source": {
@@ -2201,6 +2255,131 @@
             }
         },
         {
+            "name": "drupal/menu_position",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/menu_position.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/menu_position-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "451e315432f9f8620f7e33826498b99b8e4cd089"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1685505919",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "BarisW",
+                    "homepage": "https://www.drupal.org/user/107229"
+                },
+                {
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
+                },
+                {
+                    "name": "JohnAlbin",
+                    "homepage": "https://www.drupal.org/user/32095"
+                },
+                {
+                    "name": "lbainbridge",
+                    "homepage": "https://www.drupal.org/user/2406996"
+                },
+                {
+                    "name": "Rajab Natshah",
+                    "homepage": "https://www.drupal.org/user/1414312"
+                },
+                {
+                    "name": "Sutharsan",
+                    "homepage": "https://www.drupal.org/user/73854"
+                }
+            ],
+            "description": "This module allows for the creation of rules that will dynamically add the current page into the menu system at the requested spots.",
+            "homepage": "https://www.drupal.org/project/menu_position",
+            "support": {
+                "source": "https://git.drupalcode.org/project/menu_position",
+                "issues": "https://www.drupal.org/project/issues/menu_position"
+            }
+        },
+        {
+            "name": "drupal/menu_trail_by_path",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/menu_trail_by_path.git",
+                "reference": "2.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/menu_trail_by_path-2.0.1.zip",
+                "reference": "2.0.1",
+                "shasum": "3c2c1b0ee669c26e6ccba8a345605b7c932be2bf"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9.0 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.1",
+                    "datestamp": "1701298206",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "davy-r",
+                    "homepage": "https://www.drupal.org/user/3278771"
+                },
+                {
+                    "name": "mbovan",
+                    "homepage": "https://www.drupal.org/user/3149657"
+                },
+                {
+                    "name": "redndahead",
+                    "homepage": "https://www.drupal.org/user/160320"
+                },
+                {
+                    "name": "SeriousMatters",
+                    "homepage": "https://www.drupal.org/user/290439"
+                }
+            ],
+            "description": "Expand menus and set active-trail according to the current path.",
+            "homepage": "https://www.drupal.org/project/menu_trail_by_path",
+            "support": {
+                "source": "https://git.drupalcode.org/project/menu_trail_by_path"
+            }
+        },
+        {
             "name": "drupal/owlcarousel",
             "version": "3.0.1",
             "source": {
@@ -2718,6 +2897,67 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/slick_views",
                 "issues": "https://drupal.org/project/issues/slick_views"
+            }
+        },
+        {
+            "name": "drupal/smart_trim",
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/smart_trim.git",
+                "reference": "2.1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/smart_trim-2.1.1.zip",
+                "reference": "2.1.1",
+                "shasum": "5d1ca3c0a9990d6344249f3224353372c0b760c5"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10 || ^11",
+                "drupal/token": "^1.0",
+                "php": ">=7.4.0"
+            },
+            "require-dev": {
+                "drupal/token_filter": "^2.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.1.1",
+                    "datestamp": "1708875348",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Casias (markie)",
+                    "homepage": "https://www.drupal.org/u/markie",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "AmyJune Hineline (volkswagenchick)",
+                    "homepage": "https://www.drupal.org/u/volkswagenchick",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Michael Anello (ultimike)",
+                    "homepage": "https://www.drupal.org/u/ultimike",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Provides a more robust alternative to 'summary or trimmed' textfield format.",
+            "homepage": "https://drupal.org/project/smart_trim",
+            "support": {
+                "source": "https://git.drupalcode.org/project/smart_trim",
+                "issues": "https://drupal.org/project/issues/smart_trim"
             }
         },
         {

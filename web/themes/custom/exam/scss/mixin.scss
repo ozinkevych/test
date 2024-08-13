@@ -113,8 +113,8 @@
         margin-bottom: $gutter;
         @include node_text;
         letter-spacing: 1.2px;
-
         &:first-child {
+          word-break: break-all;
           padding-top: 100px;
         }
       }

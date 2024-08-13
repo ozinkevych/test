@@ -1,0 +1,34 @@
+.page{
+  font: 18px/1.4 "Inter", sans-serif !important;
+}
+
+.social-media-link-icon--twitter {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url('../img/social-icons/twit.png') no-repeat center center;
+  background-size: cover;
+}
+
+.social-media-link-icon--linkedin {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url('../img/social-icons/in.png') no-repeat center center;
+  background-size: cover;
+}
+
+.social-media-link-icon--facebook, {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url('../img/social-icons/fb.png') no-repeat center center;
+  background-size: cover;
+}
+
+.social-media-link-icon--twitter span,
+.social-media-link-icon--linkedin span,
+.social-media-link-icon--facebook span {
+  display: none;
+}
+

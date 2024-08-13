@@ -11,6 +11,7 @@
     img{
       width: 100%;
       height: auto;
+      padding: 0 $gutterM;
     }
   }
 }
@@ -33,6 +34,12 @@
   }
 }
 @media all and (max-width: 991px) {
+  .block-clients-full {
+    padding: $gutterM;
+    .views-field-field-image-media {
+      padding: $gutterM 0!important;
+    }
+  }
   .owl-stage {
     padding: $gutterM 0 40px 0;
   }

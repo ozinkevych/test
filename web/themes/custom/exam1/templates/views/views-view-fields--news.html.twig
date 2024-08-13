@@ -1,0 +1,39 @@
+<div class="article-preview" data-nid="{{ fields.nid.content }}">
+  <div class="article-date">
+    <span class="month">{{ fields.field_date.content|date('M')|upper }}</span>
+    <span class="day">{{ fields.field_date.content|date('d') }}</span>
+    <span class="year">{{ fields.field_date.content|date('Y') }}</span>
+  </div>
+  <div class="article-content">
+    <div class="article-meta">
+      {% if fields.field_image.content %}
+        <div class="article-image">
+          {{ fields.field_image.content }}
+        </div>
+        <div class="article-meta-category">
+          <div class="article-meta-category-block">
+            <span class="article-author">{{ fields.field_autor.content }}</span>
+            <span class="article-category">{{ fields.field_category_.content }}</span>
+          </div>
+          <div class="time-ago">
+            <span>{{ fields.changed.content }}</span>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+    <div class="article">
+      <div class="article-info">
+        <div class="article-summary">
+          <h2 class="article-title">{{ fields.title.content }}</h2>
+          <div class="body-content">
+            <div class="body-short">{{ fields.body.content }}</div>
+            <div class="body-full" style="display: none;">{{ fields.body_1.content }}</div>
+          </div>
+        </div>
+        <div class="read-more">
+          <a href="#" class="read-more-link">READ MORE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
