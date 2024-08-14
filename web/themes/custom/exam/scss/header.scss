@@ -13,35 +13,38 @@
 .site-header {
   .header-top {
     z-index: 11;
-
+    //header logo
     .region-header-top {
       margin-left: 1px;
 
       .block-content-brending {
         background-color: $violet;
-        padding: 25px $gutter;
+        padding: 30px 35px;
         line-height: 1.4;
         text-align: center;
 
         .field--name-field-brend {
           color: $blue;
+          line-height: 1;
           font-size: 32px;
+          font-weight: 500;
           padding: 0 !important;
 
         }
 
         .field--name-field-text {
           margin: 0;
-          font-size: 13px;
+          font-size: 14px;
           color: $gray;
         }
       }
     }
   }
+
   .navbar{
     padding: 0!important;
     .navbar-collapse {
-      height: 112px;
+      height: 110px;
       background-color: $white;
 
       .primary-menu {
@@ -53,7 +56,7 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
-
+          //main navigation menu
           .menu--main {
             height: 100%;
             width: min-content;
@@ -102,7 +105,7 @@
                   text-align: center !important;
                   position: relative;
                   img{
-                    width: 35px!important;
+                    width: 30px!important;
                     height: auto;
                   }
 
@@ -112,10 +115,10 @@
 
             }
           }
-
+          //block with reference to social resources
           .block-content-social_media{
             max-width: fit-content;
-
+            padding-right: $gutter!important;
             .content {
               padding-top: 7px;
               max-width: fit-content;
@@ -146,7 +149,7 @@
               }
             }
           }
-
+          //a block with a search field
           .views-exposed-form {
             max-width: fit-content;
             padding: 0 !important;
@@ -202,7 +205,7 @@
   .site-header {
     .container {
       .navbar-collapse {
-        height: 92.9px !important;
+        height: 80px !important;
         .primary-menu {
         }
         .menu--main {
@@ -223,7 +226,7 @@
     }
   }
   #block-exam-exposedformdpage-1 {
-    margin: $gutterS auto!important;
+    margin: $gutterS $gutterM $gutterS 0 !important;
     .form-type-textfield {
       input {
         height: 40px;
@@ -252,7 +255,7 @@
     .container{
       .navbar{
         .navbar-collapse {
-          height: 82.9px !important;
+          height: 70px !important;
           .primary-menu{
             .region-header-main{
               .menu--main {
@@ -289,6 +292,9 @@
   }
 }
 @media all and (max-width: 991px) {
+  #block-exam-exposedformdpage-1 {
+    margin: $gutterS auto!important;
+  }
   .front-page-header{
     top: 0!important;
     position: fixed!important;

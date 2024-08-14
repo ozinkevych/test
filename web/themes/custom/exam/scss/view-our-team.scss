@@ -11,6 +11,7 @@
 
 
 .block-views-blockour-team-block-1{
+  padding-top: 70px;
   .view-header{
     padding: 0!important;
     &:before, &:after{
@@ -22,7 +23,7 @@
   .view-header{
     @include title;
   }
-  margin-bottom: 80px;
+  margin-bottom: 100px;
   h2{
     padding-top: 80px!important;
   }
@@ -37,7 +38,7 @@
         filter: grayscale(100%);
         width: 100%;
         height: auto;
-        margin-bottom: $gutter;
+        margin-bottom: 40px;
         &:hover{
           filter: grayscale(0%);
         }
@@ -145,6 +146,9 @@
 
 }
 @media all and (max-width: 991px) {
+  .block-views-blockour-team-block-1 {
+    padding-top: 0;
+  }
   .view-our-team{
     .layout__region--first {
       .content {

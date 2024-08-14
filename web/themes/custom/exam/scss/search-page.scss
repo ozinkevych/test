@@ -19,7 +19,7 @@
         padding-right: $gutterM;
         img{
           width: 150px!important;
-          height: 150px;
+          height: 150px!important;
 
         }
       }
@@ -46,10 +46,10 @@
           }
         }
         .field--name-field-image-media{
-          padding-bottom: $gutterM;
+          margin: 0!important;
           img {
             width: 80px !important;
-            height: 80px;
+            height: 80px!important;
           }
         }
         .text-formatted{

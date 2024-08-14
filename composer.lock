@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "88b985006675541e874511ab2a746d70",
+    "content-hash": "f48a390e00e31da2e594ab8ed6d8c715",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3009,63 +3009,6 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/social_media_links",
                 "issues": "https://www.drupal.org/project/issues/social_media_links"
-            }
-        },
-        {
-            "name": "drupal/splide",
-            "version": "2.0.9",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/splide.git",
-                "reference": "2.0.9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/splide-2.0.9.zip",
-                "reference": "2.0.9",
-                "shasum": "4bfb25d88cc1f94d338bf1bd540095a48e1b7954"
-            },
-            "require": {
-                "drupal/blazy": "^2.17 || ^3.0.1",
-                "drupal/core": ">=8.8"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "2.0.9",
-                    "datestamp": "1717315569",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Gaus Surahman",
-                    "homepage": "https://www.drupal.org/user/159062",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Contributors",
-                    "homepage": "https://www.drupal.org/node/3215092/committers",
-                    "role": "Contributor"
-                }
-            ],
-            "description": "Splide, the JavaScript Slider.",
-            "homepage": "https://drupal.org/project/splide",
-            "keywords": [
-                "Drupal",
-                "carousel",
-                "slideshow"
-            ],
-            "support": {
-                "source": "https://git.drupalcode.org/project/splide",
-                "issues": "https://drupal.org/project/issues/splide"
             }
         },
         {

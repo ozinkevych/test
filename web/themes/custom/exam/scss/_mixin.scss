@@ -1,4 +1,5 @@
 @import "variables";
+//button to go to the article
 @mixin button {
   text-align: center;
   text-decoration: none;
@@ -7,23 +8,25 @@
   color: $white;
   font-size: 13px;
 }
+//the title of the view block for the article
 @mixin title_view {
-  color: $violet;
+  color: #373645;
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 24px;
 
-  @media all and (max-width: 1400px) {
-    font-size: 24px !important;
-  }
   @media all and (max-width: 1400px) {
     font-size: 20px !important;
   }
 }
+//text for the category in the project block
 @mixin text_category{
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 14px;
+  font-weight: 500;
 }
+
+//background for project blocks and news on the home page
 @mixin background {
     content: '';
     position: absolute;
@@ -38,14 +41,17 @@
     background: repeating-linear-gradient(
         -45deg,
         #ffffff,
-        #ffffff 8.5px,
-        #DBDBDB 8.5px,
-        #DBDBDB 10px
+        #ffffff 6px,
+        #D0D0D0 8px,
+        #D0D0D0 6px
     );
     background-position: center;
     z-index: -1;
   }
+
+//the text used in the article
 @mixin node_text{
+  letter-spacing: 1.2px;
   font-size: 32px;
   line-height: 38.73px;
   font-weight: 400;
@@ -56,11 +62,15 @@
   }
   @media (max-width: 768px) {
     font-size: 24px;
+    line-height: 30px!important;
+    letter-spacing: normal!important;
   }
   @media (max-width: 500px) {
     font-size: 16px;
   }
 }
+
+//settings for changing the color depending on which service the project belongs to
 @mixin project_category{
   .Web-development, .category-web-development {
     @include text_category;
@@ -81,7 +91,7 @@
     color: $color-drupal;
   }
 }
-
+//styling for the article
 @mixin style_node {
   .node-title-block {
     width: auto;
@@ -96,6 +106,9 @@
       span {
         @include node_text;
         font-weight: 600;
+        @media (max-width: 500px) {
+          font-size: 20px;
+        }
 
         &:after {
           display: none;
@@ -112,7 +125,6 @@
       p {
         margin-bottom: $gutter;
         @include node_text;
-        letter-spacing: 1.2px;
         &:first-child {
           word-break: break-all;
           padding-top: 100px;
@@ -121,13 +133,14 @@
     }
   }
 }
+//adaptive styling for the article
 @mixin node_adaptive{
   .node-content {
     .field--name-field-image-media {
       display: flex;
       justify-content: center;
       float: none!important;
-      margin: $gutterM auto!important;
+      margin: $gutterM auto;
     }
   }
   .field--name-body{
@@ -149,15 +162,17 @@
     }
   }
 }
+//block headers on the home page
 @mixin title{
     color: $violet;
     text-align: center;
-    padding: $gutter 0;
+    padding: $gutterM 0;
     display: flex;
     align-items: center;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 30px;
+
 
     &:before {
       content: "";
@@ -172,4 +187,7 @@
       border-bottom: 0.2px solid $gray;
       margin-left: $gutterM;
     }
+  @media (max-width: 786px) {
+    font-size: 24px;
+  }
 }

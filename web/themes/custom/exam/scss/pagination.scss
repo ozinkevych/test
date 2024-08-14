@@ -4,7 +4,13 @@
     .page-item {
       margin: 0!important;
       .page-link {
-        padding: 2px 12px;
+        font-size: 15px;
+        padding: 2px 11px;
+        color: #646464;
+        font-weight: 500;
+        &:hover{
+          color: $blue;
+        }
       }
     }
 
@@ -14,18 +20,18 @@
 .pagination{
   display: flex;
   justify-content: center;
-  margin-top: 60px;
+  margin-top: 50px;
   padding-bottom: $gutterM;
   li {
     padding: 0;
     margin: 0 $gutterS;
   }
   .active{
-    background-color: $gray;
+    background-color: #DDDCDD;
     border-radius: 50%;
   }
   .page-link {
-    padding: 3px 15px;
+    padding: 3px 17px;
     text-decoration: none;
     color: inherit;
     background: none;
@@ -49,7 +55,7 @@
   outline: none;
   box-shadow: none;
 }
-.block-project-full, .block-clients-full, .block-news-full, .view-our-team, .block-services-full{
+.block-project-full, .block-clients-full, .block-news-full, .view-our-team, .block-services-full, .search {
   .pagination{
     margin: 30px 0 60px 0;
     padding: 0;
@@ -63,7 +69,7 @@
   .pagination {
     margin: $gutterM 0 !important;
   }
-  .block-project-full, .block-clients-full, .block-news-full, .view-our-team, .block-services-full {
+  .block-project-full, .block-clients-full, .block-news-full, .view-our-team, .block-services-full, .search{
     .pagination {
         .page-item {
           margin: 0;

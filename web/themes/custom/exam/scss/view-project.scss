@@ -31,8 +31,8 @@
 
 .block-project {
 
-  padding-top: 80px;
-  padding-bottom: 100px;
+  padding-top: 60px;
+  padding-bottom: 120px;
   text-align: center;
 
   .views-field-field-image-media {
@@ -94,10 +94,9 @@
       padding: 0 12px !important;
     }
     }
-
-}
-@media all and (max-width: 768px) {
   .block-project{
     padding: $gutterM 0!important;
   }
+
 }
+

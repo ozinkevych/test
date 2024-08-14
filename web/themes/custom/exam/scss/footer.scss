@@ -11,6 +11,7 @@ footer {
   }
 }
 .region-footer-first {
+  padding: $gutter 0!important;
   width: 100%!important;
   display: flex;
   justify-content: space-between;
@@ -28,15 +29,16 @@ footer {
     justify-content: center;
 
     .field--name-field-brend{
-      font: 28px/1.4 "Inter", sans-serif !important;
+      font-size: 30px !important;
       margin: 0;
       padding: 0;
+      line-height: 1.2;
       color: #6E9BCA;
       font-weight: 500!important;
     }
 
     .field field--name-field-text {
-      font: 12px/1.4 "Inter", sans-serif !important;
+      font-size: 12px !important;
       margin: 0;
     }
   }
@@ -68,7 +70,11 @@ footer {
     }
   }
 }
-
+@media all and (max-width: 992px) {
+  .region-footer-first {
+    padding: 0 !important;
+  }
+}
 @media all and (max-width: 400px) {
 
   .region-footer-first{

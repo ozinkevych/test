@@ -11,34 +11,34 @@ h1, h2, h3, h4, h5 p{
 
 .social-media-link-icon--twitter {
   display: inline-block;
-  width: $gutter;
-  height: $gutter;
+  width: 28px;
+  height: 28px;
   background: url('../img/Social/twit.png') no-repeat center center;
   background-size: cover;
   &:hover{
-    border: 3px solid $violet;
+    border: 2px solid $violet;
   }
 }
 
 .social-media-link-icon--linkedin {
   display: inline-block;
-  width: $gutter;
-  height: $gutter;
+  width: 28px;
+  height: 28px;;
   background: url('../img/Social/in.png') no-repeat center center;
   background-size: cover;
   &:hover{
-    border: 3px solid $violet;
+    border: 2px solid $violet;
   }
 }
 
 .social-media-link-icon--facebook {
   display: inline-block;
-  width: $gutter;
-  height: $gutter;
+  width: 28px;
+  height: 28px;
   background: url('../img/Social/fb.png') no-repeat center center;
   background-size: cover;
   &:hover{
-    border: 3px solid $violet;
+    border: 2px solid $violet;
   }
 }
 

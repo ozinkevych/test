@@ -36,7 +36,7 @@
     z-index: 10;
 
     .field--name-field-title {
-      font-size: 76px;
+      font-size: 60px;
       line-height: 1;
       text-transform: uppercase;
     }
@@ -44,7 +44,7 @@
     .field--name-field-subtitle {
       line-height: 1;
       color: $violet;
-      font-size: 48px;
+      font-size: 38px;
       font-weight: normal;
       text-transform: uppercase;
     }
@@ -52,8 +52,8 @@
     .field--name-field-text-banner {
       line-height: 1;
       color: $blue;
-      font-size: 16px;
-      max-width: 450px;
+      font-size: 13px;
+      max-width: 350px;
     }
   }
 }
@@ -108,5 +108,10 @@
   }
   #block-exam-bannerinfo {
     left: 10%;
+  }
+}
+@media all and (max-width: 600px) {
+  #block-exam-bannerinfo {
+    left: 5% !important;
   }
 }

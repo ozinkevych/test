@@ -1,13 +1,13 @@
 @import "mixin";
 @import "variables";
-
+//block about on the home page
 .block-content-about{
   margin: 100px 0!important;
   .content{
     .layout__region--content{
       padding: 15px 0;
-      border-bottom: 4px solid $blue;
-      border-top: 4px solid $violet;
+      border-bottom: 5px solid $blue;
+      border-top: 5px solid $violet;
       display: flex;
       justify-content: space-between;
       .block-field-blockblock-contentaboutinfo{
@@ -18,6 +18,7 @@
           .field--name-info{
             @include title_view;
             font-weight: bold;
+            font-size: 30px;
             line-height: 1!important;
             display: inline-block;
           }
@@ -65,7 +66,7 @@
     }
   }
 }
-
+//article about
 .node--view-mode-full{
   .node-title-block{
     h2{
@@ -89,7 +90,7 @@
   }
 }
 .block-block-content0e3f6c87-0f7f-4fec-a129-0f671389261e {
-  margin: 100px 0 !important;
+  margin: 80px 0 !important;
 }
 @media all and (max-width: 1400px) {
 .block-field-blockblock-contentaboutbody{
@@ -127,6 +128,18 @@
 }
 
 @media all and (max-width: 768px) {
+  .node--view-mode-full {
+    .node-content {
+      .block-field-blocknodepagebody {
+        .field--name-body {
+          p {
+            font-size: 18px;
+            text-align: justify;
+          }
+        }
+      }
+    }
+  }
   .block-field-blockblock-contentaboutbody{
     p{
       font-size: 18px!important;
