@@ -1,0 +1,30 @@
+uuid: db187d77-0a2c-4693-9906-a3a1e1cc3fe6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:about:62a28dd4-1399-4fbc-818b-6a7afa0a47b2'
+  module:
+    - block_content
+    - system
+  theme:
+    - exam
+id: exam_about
+theme: exam
+region: content
+weight: -12
+provider: null
+plugin: 'block_content:62a28dd4-1399-4fbc-818b-6a7afa0a47b2'
+settings:
+  id: 'block_content:62a28dd4-1399-4fbc-818b-6a7afa0a47b2'
+  label: About
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

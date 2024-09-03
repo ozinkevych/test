@@ -1,23 +1,21 @@
-name: exam
-type: theme
+name: 'exam'
+type: 'theme'
 description: 'Basic structure for a Bootstrap Barrio SubTheme.'
-core: 8.x
-core_version_requirement: ^8 || ^9 || ^10
-base theme: bootstrap_barrio
+core: '8.x'
+core_version_requirement: '^8 || ^9 || ^10'
+base theme: 'bootstrap_barrio'
 
 libraries:
-  - exam/font-awesome
-  - exam/bootstrap_cdn
-  - exam/global-styling
-
-
+  - 'exam/font-awesome'
+  - 'exam/bootstrap_cdn'
+  - 'exam/global-styling'
 
 regions:
   header_top: 'Header Top Bar'
   header_main: 'Primary menu'
-  banner: Banner
-  highlighted: Highlighted
-  content: Content
+  banner: 'Banner'
+  highlighted: 'Highlighted'
+  content: 'Content'
   footer_first: 'Footer first'
 
 # Information added by Drupal.org packaging script on 2023-12-03

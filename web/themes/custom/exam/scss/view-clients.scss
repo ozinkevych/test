@@ -1,51 +1,65 @@
 @import "mixin";
 @import "variables";
-.block-clients-full{
+
+/* Block clients full styles */
+.block-clients-full {
   padding-bottom: 80px;
+
   .view-header {
     @include title;
     font-weight: 700;
   }
-  .views-field-field-image-media{
-    padding: $gutter 0!important;
-    img{
+
+  .views-field-field-image-media {
+    padding: $gutter 0 !important;
+
+    img {
       width: 100%;
       height: auto;
       padding: 0 $gutterM;
     }
   }
 }
-.owl-stage{
+
+/* Owl stage styles */
+.owl-stage {
   display: flex;
   align-items: center;
   padding: 40px 0 80px 0;
-  .owl-item{
+
+  .owl-item {
     padding: 0 5px;
   }
 }
+
+/* Media queries */
 @media all and (max-width: 1200px) {
-  .owl-stage{
-    .owl-item{
-      img{
+  .owl-stage {
+    .owl-item {
+      img {
         width: 100%;
         height: auto;
       }
     }
   }
 }
+
 @media all and (max-width: 991px) {
   .block-clients-full {
     padding: $gutterM;
+
     .views-field-field-image-media {
-      padding: $gutterM 0!important;
+      padding: $gutterM 0 !important;
     }
   }
+
   .owl-stage {
     padding: $gutterM 0 40px 0;
   }
-  .view-clients{
-    .views-row{
-      margin: 0!important;
+
+  .view-clients {
+    .views-row {
+      margin: 0 !important;
     }
   }
 }

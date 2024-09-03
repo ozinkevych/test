@@ -1,0 +1,27 @@
+uuid: 2bc8d2c2-9a6f-469f-96d3-624d2c81b53d
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - exam
+_core:
+  default_config_hash: qtcvKihKLABp69JyzLrP4w1EsWPeruemty4A2zHCVuQ
+id: exam_account_menu
+theme: exam
+region: header_top
+weight: -6
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

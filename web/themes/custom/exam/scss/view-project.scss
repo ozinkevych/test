@@ -1,7 +1,7 @@
 @import "variables";
 @import "mixin";
 
-
+/* Block views block project block styles */
 .block-views-blockproject-block-1 {
   position: relative;
   z-index: 2;
@@ -12,10 +12,11 @@
 
   .block-project {
     position: relative;
-    &:before{
-      @include background;
 
+    &:before {
+      @include background;
     }
+
     .view-header {
       &:before,
       &:after {
@@ -29,14 +30,15 @@
   }
 }
 
+/* Block project styles */
 .block-project {
-
   padding-top: 60px;
   padding-bottom: 120px;
   text-align: center;
 
   .views-field-field-image-media {
     background-color: $white;
+
     img {
       width: 100%;
       height: auto;
@@ -47,9 +49,11 @@
   .views-field-view-node {
     background-color: $white;
     padding-bottom: $gutterS;
+
     a {
       @include button;
       background-color: $violet;
+
       &:hover {
         color: $violet;
         background-color: $white;
@@ -75,6 +79,7 @@
   }
 }
 
+/* Block project full styles */
 .block-project-full {
   padding: 0 !important;
 
@@ -87,16 +92,36 @@
     padding-bottom: $gutter;
   }
 }
+
+/* Media queries */
 @media all and (max-width: 991px) {
+  .node.node--type-project {
+    .node-content {
+      .field--name-field-image-media {
+        img {
+          width: 290px!important;
+          height: 290px!important;
+        }
+      }
+    }
+
+  }
 
   .block-project-full {
     .views-row {
       padding: 0 12px !important;
     }
-    }
-  .block-project{
-    padding: $gutterM 0!important;
   }
 
-}
+  .block-project {
+    padding: $gutterM 0 !important;
 
+    .view-content {
+      .views-row {
+        width: 350px;
+        margin: 0 auto;
+        padding-bottom: $gutterM!important;
+      }
+    }
+  }
+}

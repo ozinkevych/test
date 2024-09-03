@@ -1,60 +1,74 @@
 @import "mixin";
 @import "variables";
-//block about on the home page
-.block-content-about{
-  margin: 100px 0!important;
-  .content{
-    .layout__region--content{
+
+/* Block about on the home page */
+.block-content-about {
+  margin: 100px 0 !important;
+
+  .content {
+    .layout__region--content {
       padding: 15px 0;
       border-bottom: 5px solid $blue;
       border-top: 5px solid $violet;
       display: flex;
       justify-content: space-between;
-      .block-field-blockblock-contentaboutinfo{
+
+      .block-field-blockblock-contentaboutinfo {
         margin-right: auto;
         display: inline-block;
-        .content{
+
+        .content {
           display: inline-block;
-          .field--name-info{
+
+          .field--name-info {
             @include title_view;
             font-weight: bold;
             font-size: 30px;
-            line-height: 1!important;
+            line-height: 1 !important;
             display: inline-block;
           }
         }
       }
-      .block-field-blockblock-contentaboutbody{
+
+      .block-field-blockblock-contentaboutbody {
         display: flex;
         align-items: center;
-        .content{
+
+        .content {
           display: inline-block;
-          .field--name-body{
+
+          .field--name-body {
             display: inline-block;
-            p{
+
+            p {
               line-height: 1;
               display: inline-block;
               margin: 0;
-              font-size: 20px;;
+              font-size: 20px;
               color: $gray;
               text-transform: uppercase;
             }
           }
         }
       }
-      .block-field-blockblock-contentaboutfield-more-detals{
+
+      .block-field-blockblock-contentaboutfield-more-detals {
         align-items: center;
-        margin-left: auto!important;
+        margin-left: auto !important;
         display: flex;
-        .content{
+
+        .content {
           display: inline-block;
-          .field--name-field-more-detals{
+
+          .field--name-field-more-detals {
             display: inline-block;
-            a{
+
+            a {
               @include button;
               background-color: $blue;
               border: 3px solid $blue;
-              &:hover{
+
+              &:hover {
                 border: 3px solid $blue;
                 background-color: $white;
                 color: $blue;
@@ -66,16 +80,18 @@
     }
   }
 }
-//article about
-.node--view-mode-full{
-  .node-title-block{
-    h2{
+
+/* Article about */
+.node--view-mode-full {
+  .node-title-block {
+    h2 {
       @include title;
     }
   }
-  .node-content{
-    .block-field-blocknodepagebody{
-      .field--name-body{
+
+  .node-content {
+    .block-field-blocknodepagebody {
+      .field--name-body {
         p {
           font-weight: 500;
           line-height: 29.05px;
@@ -86,30 +102,34 @@
         padding-bottom: $gutter;
       }
     }
-
   }
 }
+
 .block-block-content0e3f6c87-0f7f-4fec-a129-0f671389261e {
   margin: 80px 0 !important;
 }
+
 @media all and (max-width: 1400px) {
-.block-field-blockblock-contentaboutbody{
-  .content{
-    .field--name-body{
-      p{
-        font-size: 16px;
-      }
+  .block-field-blockblock-contentaboutbody {
+    .content {
+      .field--name-body {
+        p {
+          font-size: 16px;
+        }
       }
     }
-}
-  #block-exam-about{
+  }
+
+  #block-exam-about {
     .content {
       .layout__region--content {
-        flex-direction: column!important;
-        justify-content: center!important;
+        flex-direction: column !important;
+        justify-content: center !important;
 
-        .block-field-blockblock-contentaboutfield-more-detals, .block-field-blockblock-contentaboutbody, .block-field-blockblock-contentaboutinfo {
-          margin: 5px auto!important;
+        .block-field-blockblock-contentaboutfield-more-detals,
+        .block-field-blockblock-contentaboutbody,
+        .block-field-blockblock-contentaboutinfo {
+          margin: 5px auto !important;
           text-align: center;
         }
 
@@ -117,13 +137,13 @@
           margin: $gutterS 0;
         }
       }
-
     }
   }
 }
+
 @media all and (max-width: 1200px) {
-  #block-exam-about{
-    margin: $gutterM 0!important;
+  #block-exam-about {
+    margin: $gutterM 0 !important;
   }
 }
 
@@ -140,10 +160,10 @@
       }
     }
   }
-  .block-field-blockblock-contentaboutbody{
-    p{
-      font-size: 18px!important;
+
+  .block-field-blockblock-contentaboutbody {
+    p {
+      font-size: 18px !important;
     }
   }
 }
-

@@ -1,0 +1,23 @@
+uuid: 6ff2efa7-67ff-454f-912d-5302c39ba5b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.about
+    - field.storage.block_content.field_more_detals
+  module:
+    - link
+id: block_content.about.field_more_detals
+field_name: field_more_detals
+entity_type: block_content
+bundle: about
+label: 'More detals'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

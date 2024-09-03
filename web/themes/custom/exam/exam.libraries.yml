@@ -4,21 +4,7 @@ global-styling:
     js/global.js: {}
   css:
     component:
-      css/footer.css: {}
-      css/global.css: {}
-      css/view.css: {}
-      css/pagination.css: {}
-      css/about.css: {}
-      css/header.css: {}
-      css/view-our-team.css: {}
-      css/view-services.css: {}
-      css/view-project.css: {}
-      css/node.css: {}
-      css/contact.css: {}
-      css/banner.css: {}
-      css/view-clients.css: {}
-      css/view-news.css: {}
-      css/search-page.css: {}
+      css/styles.css: {}
     theme:
       "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap": {}
 bootstrap:

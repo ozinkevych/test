@@ -1,45 +1,58 @@
 @import "variables";
 @import "mixin";
 
-.block-news-full{
-  .views-exposed-form{
-    &:before{
+/* Block news full styles */
+.block-news-full {
+  .views-exposed-form {
+    &:before {
       display: none;
     }
   }
 }
 
-
-.block-views-blockour-team-block-1{
+/* Block views block our team styles */
+.block-views-blockour-team-block-1 {
   padding-top: 70px;
-  .view-header{
-    padding: 0!important;
-    &:before, &:after{
+
+  .view-header {
+    padding: 0 !important;
+
+    &:before,
+    &:after {
       display: none;
     }
   }
 }
-.view-our-team{
-  .view-header{
+
+/* View our team styles */
+.view-our-team {
+  .view-header {
     @include title;
   }
+
   margin-bottom: 100px;
-  h2{
-    padding-top: 80px!important;
+
+  h2 {
+    padding-top: 80px !important;
   }
+
   .node--type-our-team {
     border-bottom: none;
+
     .node-title-block {
       display: none;
     }
+
     .field--name-field-image-media {
       width: 100%;
+
       img {
         filter: grayscale(100%);
         width: 100%;
         height: auto;
         margin-bottom: 40px;
-        &:hover{
+
+        &:hover {
           filter: grayscale(0%);
         }
       }
@@ -48,7 +61,6 @@
     }
 
     .block-field-blocknodeour-teamtitle {
-
       text-align: center;
 
       .field--name-title {
@@ -68,6 +80,7 @@
         margin-bottom: 5px;
       }
     }
+
     .block-extra-field-blocknodeour-teamlinks {
       margin-bottom: $gutterM;
 
@@ -102,73 +115,91 @@
         }
       }
     }
-
-
   }
 
-  .layout__region--first{
-    .content{
+  .layout__region--first {
+    .content {
       display: flex;
       justify-content: end;
-      .social-media-links--platforms{
+
+      .social-media-links--platforms {
         display: inline-block;
-        li{
+
+        li {
           padding: 0 0 0 5px;
         }
       }
     }
-
   }
-  .layout__region--second{
-    .flag-like{
+
+  .layout__region--second {
+    .flag-like {
       display: flex;
       justify-content: center;
       padding-top: 3px;
-      a{
+
+      a {
         text-decoration: none;
-        svg{
+
+        svg {
           color: $gray;
-          &:hover{
-            color:$red;
+
+          &:hover {
+            color: $red;
           }
         }
       }
     }
-    .action-unflag{
-      a{
+
+    .action-unflag {
+      a {
         text-decoration: none;
-        svg{
+
+        svg {
           color: $red;
         }
       }
     }
   }
-
 }
+
+/* Media queries */
 @media all and (max-width: 991px) {
   .block-views-blockour-team-block-1 {
     padding-top: 0;
   }
-  .view-our-team{
+
+  .view-our-team {
     .layout__region--first {
       .content {
         justify-content: center;
       }
-      }
-    margin: 0!important;
-    .node--type-page.node--view-mode-full{
+    }
+
+    margin: 0 !important;
+
+    .node--type-page.node--view-mode-full {
       .layout--twocol-section {
         align-items: center;
-        flex-direction: row!important;
+        flex-direction: row !important;
       }
-  }
+    }
 
     .node--view-mode-teaser {
-      margin: 0!important;
-      padding: 0!important;
+      margin: 0 !important;
+      padding: 0 !important;
     }
+
+    .view-content {
+      .views-row {
+        width: 350px !important;
+        margin: 0 auto;
+        padding-bottom: $gutterM;
+      }
+    }
+  }
 }
-}
+
 @media all and (max-width: 640px) {
   .layout--twocol-section {
     flex-wrap: nowrap;

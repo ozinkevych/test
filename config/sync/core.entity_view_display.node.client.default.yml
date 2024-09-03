@@ -1,0 +1,46 @@
+uuid: dfe1f65f-3e28-4590-aea4-f637f440f52f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.client.field_clients_url
+    - field.field.node.client.field_image_media
+    - node.type.client
+  module:
+    - link
+    - media
+    - user
+id: node.client.default
+targetEntityType: node
+bundle: client
+mode: default
+content:
+  field_clients_url:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_image_media:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

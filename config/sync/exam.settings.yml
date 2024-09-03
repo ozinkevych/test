@@ -1,0 +1,74 @@
+favicon:
+  use_default: true
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  use_default: true
+bootstrap_barrio_source: '0'
+bootstrap_barrio_container: container
+bootstrap_barrio_region_clean_highlighted: 1
+bootstrap_barrio_region_class_highlighted: ''
+bootstrap_barrio_region_clean_content: 1
+bootstrap_barrio_region_class_content: ''
+bootstrap_barrio_region_clean_footer_first: 0
+bootstrap_barrio_region_class_footer_first: row
+bootstrap_barrio_sidebar_position: left
+bootstrap_barrio_content_offset: 0
+bootstrap_barrio_sidebar_collapse: 0
+bootstrap_barrio_sidebar_first_width: 2
+bootstrap_barrio_sidebar_first_offset: 0
+bootstrap_barrio_sidebar_second_width: 2
+bootstrap_barrio_sidebar_second_offset: 0
+bootstrap_barrio_hide_node_label: 0
+bootstrap_barrio_breadcrumb_divider: ''
+bootstrap_barrio_button: 0
+bootstrap_barrio_button_size: ''
+bootstrap_barrio_button_type: primary
+bootstrap_barrio_button_outline: 0
+bootstrap_barrio_navbar_container: '0'
+bootstrap_barrio_navbar_toggle: navbar-toggleable-xl
+bootstrap_barrio_navbar_top_navbar: 0
+bootstrap_barrio_navbar_top_class: ''
+bootstrap_barrio_navbar_class: ''
+bootstrap_barrio_navbar_top_position: ''
+bootstrap_barrio_navbar_top_color: ''
+bootstrap_barrio_navbar_top_background: ''
+bootstrap_barrio_navbar_position: ''
+bootstrap_barrio_navbar_color: ''
+bootstrap_barrio_navbar_background: ''
+bootstrap_barrio_navbar_flyout: false
+bootstrap_barrio_navbar_slide: false
+bootstrap_barrio_navbar_offcanvas: ''
+bootstrap_barrio_messages_widget: default
+bootstrap_barrio_float_label: '0'
+bootstrap_barrio_checkbox: ''
+bootstrap_barrio_navbar_top_affix: 0
+bootstrap_barrio_navbar_affix: 0
+bootstrap_barrio_sidebar_first_affix: 0
+bootstrap_barrio_sidebar_second_affix: 0
+bootstrap_barrio_scroll_spy: ''
+bootstrap_barrio_google_fonts: ''
+bootstrap_barrio_bootstrap_icons: 0
+bootstrap_barrio_icons: ''
+bootstrap_barrio_system_messages: ''
+bootstrap_barrio_table_style: ''
+bootstrap_barrio_table_hover: 0
+bootstrap_barrio_table_head: ''
+bootstrap_barrio_image_fluid: false
+bootstrap_barrio_tabs_style: ''
+bootstrap_barrio_enable_color: false
+bootstrap_barrio_region_clean_header_top: 0
+bootstrap_barrio_region_width_header_top: 0
+bootstrap_barrio_region_class_header_top: row
+bootstrap_barrio_region_clean_header_main: 0
+bootstrap_barrio_region_width_header_main: 0
+bootstrap_barrio_region_class_header_main: row
+bootstrap_barrio_region_clean_banner: 0
+bootstrap_barrio_region_width_banner: 0
+bootstrap_barrio_region_class_banner: row
+bootstrap_barrio_region_width_highlighted: 0
+bootstrap_barrio_region_width_content: 0
+bootstrap_barrio_region_width_footer_first: 0

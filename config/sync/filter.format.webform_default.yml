@@ -1,0 +1,14 @@
+uuid: 7aa9ea81-7dec-470d-9526-088ffb4e5cf3
+langcode: en
+status: true
+dependencies:
+  module: {  }
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: EeKp_M4Oid3erARiAam9rsgBKR91uEnFkEP3aZS2ol8
+name: 'Webform (Default) - DO NOT EDIT'
+format: webform_default
+weight: 100
+filters: {  }

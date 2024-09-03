@@ -22,7 +22,7 @@
         height: auto;
         object-fit: cover;
         display: block;
-        object-position: center
+        object-position: center;
       }
     }
   }
@@ -57,42 +57,50 @@
     }
   }
 }
+
 @media all and (max-width: 1200px) {
-  .banner{
+  .banner {
     #block-exam-bannerinfo {
       top: 60%;
+
       .field--name-field-title {
         font-size: 48px;
       }
+
       .field--name-field-subtitle {
         font-size: 30px;
       }
-      .field--name-field-text-banner{
-        max-width: 300px;
-        font-size: 12px!important;
 
+      .field--name-field-text-banner {
+        max-width: 300px;
+        font-size: 12px !important;
       }
     }
   }
 }
+
 @media all and (max-width: 992px) {
   .front-page-header {
     top: 0 !important;
   }
-  .banner{
+
+  .banner {
     #block-exam-bannerinfo {
       .field--name-field-title {
         font-size: 32px;
       }
+
       .field--name-field-subtitle {
         font-size: 20px;
       }
-      .field--name-field-text-banner{
+
+      .field--name-field-text-banner {
         max-width: 200px;
       }
     }
   }
 }
+
 @media all and (max-width: 700px) {
   .banner {
     #block-exam-banner {
@@ -106,10 +114,12 @@
       }
     }
   }
+
   #block-exam-bannerinfo {
     left: 10%;
   }
 }
+
 @media all and (max-width: 600px) {
   #block-exam-bannerinfo {
     left: 5% !important;

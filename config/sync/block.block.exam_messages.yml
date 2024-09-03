@@ -1,0 +1,22 @@
+uuid: fa17c033-812f-4783-843b-a2775d05d87e
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - exam
+_core:
+  default_config_hash: DYPkbBfRGgLSODE7BnHra3WvTyav8TbEoylAZE6ScnM
+id: exam_messages
+theme: exam
+region: highlighted
+weight: -6
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

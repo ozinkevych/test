@@ -1,0 +1,8 @@
+uuid: e51ae1f9-f950-4705-a5ad-0c95f2181eca
+langcode: en
+status: true
+dependencies: {  }
+id: geolocation
+label: Geolocation
+revision: false
+description: null

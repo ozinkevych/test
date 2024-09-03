@@ -1,0 +1,15 @@
+uuid: 2132dd56-5518-405d-a064-d2b4a6e0b23a
+langcode: en
+status: true
+dependencies: {  }
+name: services
+label: Services
+effects:
+  021a8324-7616-4b43-a331-3705dec21d30:
+    uuid: 021a8324-7616-4b43-a331-3705dec21d30
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 131
+      height: 125
+      anchor: center-center

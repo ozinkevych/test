@@ -1,0 +1,47 @@
+uuid: be250b0f-3089-4dbb-b88a-82ed6dd9ba3f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.address.field_address
+    - field.field.paragraph.address.field_country
+    - field.field.paragraph.address.field_email
+    - field.field.paragraph.address.field_phone
+    - paragraphs.paragraphs_type.address
+id: paragraph.address.default
+targetEntityType: paragraph
+bundle: address
+mode: default
+content:
+  field_address:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_country:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_email:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_phone:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

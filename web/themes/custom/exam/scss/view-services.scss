@@ -1,9 +1,11 @@
 @import "variables";
 @import "mixin";
 
-.block-services-full{
-  padding: 0!important;
-  margin: 0!important;
+/* Block services full styles */
+.block-services-full {
+  padding: 0 !important;
+  margin: 0 !important;
+
   .view-header {
     @include title;
     font-weight: 700;
@@ -11,74 +13,78 @@
 
   .row {
     padding-bottom: 20px;
-    .views-row{
+
+    .views-row {
       padding: 60px $gutterM !important;
     }
-
   }
 }
+
+/* Block services styles */
 .block-services {
   padding: 80px 0;
-    text-align: center;
+  text-align: center;
 
-    .view-header{
-      @include title
+  .view-header {
+    @include title;
+  }
+
+  .views-field-field-image-media {
+    margin-bottom: $gutter;
+    height: 121px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .views-field-title {
+    line-height: 0.8;
+    margin-bottom: $gutterS;
+
+    .field-content {
+      @include title_view;
+    }
+  }
+
+  .views-field-body {
+    div {
+      text-transform: uppercase;
+      font-size: 12px;
+      color: $gray;
+      line-height: normal;
     }
 
-    .views-field-field-image-media {
-      margin-bottom: $gutter;
-      height: 121px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+    padding: 5px 0 $gutter 0;
+  }
 
-    .views-field-title {
-      line-height: 0.8;
-      margin-bottom: $gutterS;
+  .views-field-view-node {
+    a {
+      background-color: $blue;
+      @include button;
 
-      .field-content {
-        @include title_view
-      }
-    }
-
-    .views-field-body {
-      div {
-        text-transform: uppercase;
-        font-size: 12px;
-        color: $gray;
-        line-height: normal;
-      }
-
-      padding: 5px 0 $gutter 0;
-    }
-
-    .views-field-view-node {
-      a {
-        background-color: $blue;
-        @include button;
-        &:hover{
-          color: $blue;
-          background-color: $white;
-          border: 3px solid $blue;
-        }
+      &:hover {
+        color: $blue;
+        background-color: $white;
+        border: 3px solid $blue;
       }
     }
   }
+}
+
+/* Media queries */
 @media all and (max-width: 992px) {
   .block-services {
     padding: 0 !important;
     margin: $gutterM 0 !important;
   }
-  .block-services-full{
+
+  .block-services-full {
     .row {
       .views-row {
         padding: $gutterM !important;
-
       }
     }
   }
-
 }
 
 @media all and (max-width: 768px) {
@@ -90,11 +96,11 @@
       }
     }
   }
+
   .block-services-full {
     .row {
       .views-row {
-        padding: 0!important;
-
+        padding: 0 !important;
       }
     }
   }

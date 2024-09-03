@@ -1,35 +1,42 @@
 @import "variables";
-.front-page{
-  .pagination{
+
+/* Styles for front page pagination */
+.front-page {
+  .pagination {
     .page-item {
-      margin: 0!important;
+      margin: 0 !important;
+
       .page-link {
         font-size: 15px;
         padding: 2px 11px;
         color: #646464;
         font-weight: 500;
-        &:hover{
+
+        &:hover {
           color: $blue;
         }
       }
     }
-
   }
 }
 
-.pagination{
+/* General pagination styles */
+.pagination {
   display: flex;
   justify-content: center;
   margin-top: 50px;
   padding-bottom: $gutterM;
+
   li {
     padding: 0;
     margin: 0 $gutterS;
   }
-  .active{
+
+  .active {
     background-color: #DDDCDD;
     border-radius: 50%;
   }
+
   .page-link {
     padding: 3px 17px;
     text-decoration: none;
@@ -37,14 +44,17 @@
     background: none;
     border: none;
     font: inherit;
-    &:hover{
+
+    &:hover {
       color: $blue;
     }
   }
 }
+
 .page-item[role="presentation"] {
   display: none;
 }
+
 .pagination .page-item.active .page-link {
   background-color: transparent;
   border: none;
@@ -55,30 +65,45 @@
   outline: none;
   box-shadow: none;
 }
-.block-project-full, .block-clients-full, .block-news-full, .view-our-team, .block-services-full, .search {
-  .pagination{
+
+/* Styles for pagination within specific blocks */
+.block-project-full,
+.block-clients-full,
+.block-news-full,
+.view-our-team,
+.block-services-full,
+.search {
+  .pagination {
     margin: 30px 0 60px 0;
     padding: 0;
+
     .page-item {
       font-size: 24px;
     }
   }
 }
 
+/* Responsive styles for pagination */
 @media all and (max-width: 991px) {
   .pagination {
     margin: $gutterM 0 !important;
   }
-  .block-project-full, .block-clients-full, .block-news-full, .view-our-team, .block-services-full, .search{
+
+  .block-project-full,
+  .block-clients-full,
+  .block-news-full,
+  .view-our-team,
+  .block-services-full,
+  .search {
     .pagination {
-        .page-item {
-          margin: 0;
-          font-size: 17px!important;
-          .page-link {
-            padding: 2px 11px!important;
+      .page-item {
+        margin: 0;
+        font-size: 17px !important;
+
+        .page-link {
+          padding: 2px 11px !important;
         }
       }
-
     }
   }
 }

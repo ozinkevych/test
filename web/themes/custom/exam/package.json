@@ -5,12 +5,18 @@
   "main": "index.js",
   "scripts": {
     "compile:sass": "sass scss:css --style=compressed",
-    "watch:sass": "sass scss:css --watch --style compressed"
+    "watch:sass": "sass scss:css --watch --style compressed",
+    "build:css": "npm run compile:sass && gulp concat-css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "del": "^7.1.0",
+    "gulp": "^5.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
     "sass": "^1.77.8"
   }
 }

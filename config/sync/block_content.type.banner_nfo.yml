@@ -1,0 +1,8 @@
+uuid: 5dadf066-fa7a-45c0-a7f6-541456d7acc5
+langcode: en
+status: true
+dependencies: {  }
+id: banner_nfo
+label: 'Banner Info'
+revision: false
+description: ''

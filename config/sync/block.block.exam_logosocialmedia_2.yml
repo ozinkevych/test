@@ -1,0 +1,25 @@
+uuid: 86bd3606-0c4e-42ae-8f2e-e1d0b7105225
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:social_media:81740ced-9305-4126-b719-c015e64238e4'
+  module:
+    - block_content
+  theme:
+    - exam
+id: exam_logosocialmedia_2
+theme: exam
+region: header_main
+weight: -11
+provider: null
+plugin: 'block_content:81740ced-9305-4126-b719-c015e64238e4'
+settings:
+  id: 'block_content:81740ced-9305-4126-b719-c015e64238e4'
+  label: 'Logo social media'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 985388a2-ecb7-410f-b346-0ef86a123423
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:brending:9678243b-1c41-4d53-8717-f238ec4637dd'
+  module:
+    - block_content
+  theme:
+    - exam
+id: exam_quarantie_3
+theme: exam
+region: header_top
+weight: -12
+provider: null
+plugin: 'block_content:9678243b-1c41-4d53-8717-f238ec4637dd'
+settings:
+  id: 'block_content:9678243b-1c41-4d53-8717-f238ec4637dd'
+  label: Quarantie
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

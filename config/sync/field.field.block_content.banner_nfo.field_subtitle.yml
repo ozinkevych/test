@@ -1,0 +1,22 @@
+uuid: 9571ea50-5630-4db9-b6cb-73423d86a44d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner_nfo
+    - field.storage.block_content.field_subtitle
+  module:
+    - text
+id: block_content.banner_nfo.field_subtitle
+field_name: field_subtitle
+entity_type: block_content
+bundle: banner_nfo
+label: Subtitle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

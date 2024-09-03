@@ -1,0 +1,22 @@
+uuid: abbaef30-12cb-48c2-92ff-49cddad8695a
+langcode: en
+status: false
+dependencies:
+  theme:
+    - exam
+_core:
+  default_config_hash: 3QacOH-OIyNWhKlDMzLcaBsJAWtpQUTFeo0Qj7hEOYU
+id: exam_primary_local_tasks
+theme: exam
+region: content
+weight: -8
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

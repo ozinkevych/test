@@ -1,0 +1,25 @@
+uuid: 0e639d84-791b-4825-b058-9f85ca853ff6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_nfo:7ed76f86-99ef-4c52-9674-49ccac9f60ac'
+  module:
+    - block_content
+  theme:
+    - exam
+id: exam_bannerinfo
+theme: exam
+region: banner
+weight: 0
+provider: null
+plugin: 'block_content:7ed76f86-99ef-4c52-9674-49ccac9f60ac'
+settings:
+  id: 'block_content:7ed76f86-99ef-4c52-9674-49ccac9f60ac'
+  label: 'Banner info'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

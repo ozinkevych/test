@@ -1,0 +1,147 @@
+uuid: 74297e49-b2cc-4588-be8b-ada22e31d80c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.services.body
+    - field.field.node.services.field_image_media
+    - node.type.services
+  module:
+    - layout_builder
+    - layout_discovery
+    - media
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          ae39881f-8729-4947-be4f-fba957d738c6:
+            uuid: ae39881f-8729-4947-be4f-fba957d738c6
+            region: content
+            configuration:
+              id: 'field_block:node:services:field_image_media'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          b08ea915-f830-4049-bbce-f03d30bcb9e2:
+            uuid: b08ea915-f830-4049-bbce-f03d30bcb9e2
+            region: content
+            configuration:
+              id: 'extra_field_block:node:services:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          0a1d62b2-5bfa-41f9-b164-c4b6eded4d6d:
+            uuid: 0a1d62b2-5bfa-41f9-b164-c4b6eded4d6d
+            region: content
+            configuration:
+              id: 'field_block:node:services:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          a23850b3-cb4d-4835-b1c1-45d5ccfcd8c6:
+            uuid: a23850b3-cb4d-4835-b1c1-45d5ccfcd8c6
+            region: content
+            configuration:
+              id: 'field_block:node:services:body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: smart_trim
+                label: hidden
+                settings:
+                  trim_length: 250
+                  trim_type: chars
+                  trim_suffix: ...
+                  wrap_output: false
+                  wrap_class: trimmed
+                  more:
+                    display_link: false
+                    target_blank: false
+                    link_trim_only: false
+                    class: more-link
+                    text: More
+                    aria_label: 'Read more about [node:title]'
+                  summary_handler: ignore
+                  trim_options:
+                    text: true
+                    trim_zero: false
+                    replace_tokens: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.services.search_result
+targetEntityType: node
+bundle: services
+mode: search_result
+content:
+  body:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 250
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image_media:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  search_api_excerpt: true

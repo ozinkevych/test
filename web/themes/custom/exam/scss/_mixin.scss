@@ -1,5 +1,6 @@
 @import "variables";
-//button to go to the article
+
+/* Button to go to the article  */
 @mixin button {
   text-align: center;
   text-decoration: none;
@@ -8,7 +9,8 @@
   color: $white;
   font-size: 13px;
 }
-//the title of the view block for the article
+
+/*  The title of the view block for the article  */
 @mixin title_view {
   color: #373645;
   text-transform: uppercase;
@@ -18,60 +20,63 @@
     font-size: 20px !important;
   }
 }
-//text for the category in the project block
-@mixin text_category{
+
+/*  Text for the category in the project block  */
+@mixin text_category {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 500;
 }
 
-//background for project blocks and news on the home page
+/*  Background for project blocks and news on the home page  */
 @mixin background {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    right: 50%;
-    bottom: 0;
-    width: 100vw;
-    height: 100%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    background: repeating-linear-gradient(
-        -45deg,
-        #ffffff,
-        #ffffff 6px,
-        #D0D0D0 8px,
-        #D0D0D0 6px
-    );
-    background-position: center;
-    z-index: -1;
-  }
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  width: 100vw;
+  height: 100%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background: repeating-linear-gradient(
+      -45deg,
+      #ffffff,
+      #ffffff 6px,
+      #D0D0D0 8px,
+      #D0D0D0 6px
+  ) center;
+  z-index: -1;
+}
 
-//the text used in the article
-@mixin node_text{
+/*  The text used in the article  */
+@mixin node_text {
   letter-spacing: 1.2px;
   font-size: 32px;
   line-height: 38.73px;
   font-weight: 400;
   color: $black;
   text-transform: capitalize;
+
   @media (max-width: 992px) {
     text-align: justify;
   }
+
   @media (max-width: 768px) {
     font-size: 24px;
-    line-height: 30px!important;
-    letter-spacing: normal!important;
+    line-height: 30px !important;
+    letter-spacing: normal !important;
   }
+
   @media (max-width: 500px) {
     font-size: 16px;
   }
 }
 
-//settings for changing the color depending on which service the project belongs to
-@mixin project_category{
+/*  Settings for changing the color depending on which service the project belongs to  */
+@mixin project_category {
   .Web-development, .category-web-development {
     @include text_category;
     color: $color-web-development;
@@ -82,23 +87,26 @@
     color: $color-php-development;
   }
 
-  .App-dewelopment, .category-app-dewelopment {
+  .App-development, .category-app-development {
     @include text_category;
     color: $color-app-development;
   }
+
   .Drupal-project, .category-drupal-project {
     @include text_category;
     color: $color-drupal;
   }
 }
-//styling for the article
+
+/* Styling for the article */
 @mixin style_node {
   .node-title-block {
     width: auto;
     float: left;
 
     .node__title {
-      padding: 0!important;
+      padding: 0 !important;
+
       &:before {
         display: none;
       }
@@ -106,6 +114,7 @@
       span {
         @include node_text;
         font-weight: 600;
+
         @media (max-width: 500px) {
           font-size: 20px;
         }
@@ -115,7 +124,6 @@
         }
       }
     }
-
   }
 
   .node-content {
@@ -125,6 +133,7 @@
       p {
         margin-bottom: $gutter;
         @include node_text;
+
         &:first-child {
           word-break: break-all;
           padding-top: 100px;
@@ -133,60 +142,66 @@
     }
   }
 }
-//adaptive styling for the article
-@mixin node_adaptive{
+
+/*  Adaptive styling for the article  */
+@mixin node_adaptive {
   .node-content {
     .field--name-field-image-media {
       display: flex;
       justify-content: center;
-      float: none!important;
+      float: none !important;
       margin: $gutterM auto;
     }
   }
-  .field--name-body{
-    p:first-child{
-      padding: 0!important;
+
+  .field--name-body {
+    p:first-child {
+      padding: 0 !important;
     }
   }
+
   .node-title-block {
     float: none;
     width: 100%;
     text-align: center;
-    .node__title{
-      &:after{
-        display: none!important;
+
+    .node__title {
+      &:after {
+        display: none !important;
       }
-      span{
+
+      span {
         margin: 0 auto;
       }
     }
   }
 }
-//block headers on the home page
-@mixin title{
-    color: $violet;
-    text-align: center;
-    padding: $gutterM 0;
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 30px;
 
+/* Block headers on the home page  */
+@mixin title {
+  color: $violet;
+  text-align: center;
+  padding: $gutterM 0;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
 
-    &:before {
-      content: "";
-      flex: 1;
-      border-bottom: 0.2px solid $gray;
-      margin-right: $gutterM;
-    }
+  &:before {
+    content: "";
+    flex: 1;
+    border-bottom: 0.2px solid $gray;
+    margin-right: $gutterM;
+  }
 
-    &:after {
-      content: "";
-      flex: 1;
-      border-bottom: 0.2px solid $gray;
-      margin-left: $gutterM;
-    }
+  &:after {
+    content: "";
+    flex: 1;
+    border-bottom: 0.2px solid $gray;
+    margin-left: $gutterM;
+  }
+
   @media (max-width: 786px) {
     font-size: 24px;
   }

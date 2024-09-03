@@ -1,0 +1,23 @@
+uuid: dce2ccb6-f3fd-488e-bc37-af721ca9d2a4
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - exam
+_core:
+  default_config_hash: OwbWQ911ZN13ZXG4thswC1Z1Y0jM3ICt-jSNp17sXcI
+id: exam_search_form_wide
+theme: exam
+region: header_top
+weight: -8
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

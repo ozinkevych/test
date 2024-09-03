@@ -1,58 +1,74 @@
 @import "variables";
 
+/* Importing fonts from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+/* Setting the font family for the entire document */
 body {
   font-family: 'Inter', sans-serif;
 }
-h1, h2, h3, h4, h5 p{
-  margin: 0!important;
+
+/* Removing default margin for headings and paragraphs */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0 !important;
 }
 
+/* Styling for Twitter social media icon */
 .social-media-link-icon--twitter {
   display: inline-block;
   width: 28px;
   height: 28px;
   background: url('../img/Social/twit.png') no-repeat center center;
   background-size: cover;
-  &:hover{
+
+  &:hover {
     border: 2px solid $violet;
   }
 }
 
+/* Styling for LinkedIn social media icon */
 .social-media-link-icon--linkedin {
   display: inline-block;
   width: 28px;
-  height: 28px;;
+  height: 28px;
   background: url('../img/Social/in.png') no-repeat center center;
   background-size: cover;
-  &:hover{
+
+  &:hover {
     border: 2px solid $violet;
   }
 }
 
+/* Styling for Facebook social media icon */
 .social-media-link-icon--facebook {
   display: inline-block;
   width: 28px;
   height: 28px;
   background: url('../img/Social/fb.png') no-repeat center center;
   background-size: cover;
-  &:hover{
+
+  &:hover {
     border: 2px solid $violet;
   }
 }
 
+/* Styling for all social media icons under .social-media-links--platforms */
 .social-media-links--platforms {
   .social-media-link-icon {
     &--twitter,
     &--linkedin,
     &--facebook {
       svg {
-        display: none!important;
+        display: none !important;
       }
     }
   }
 }
+
 a {
   color: inherit;
   text-decoration: none;

@@ -1,0 +1,22 @@
+uuid: 14cc9f88-21ba-40fa-a412-f63e0153cead
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.brending
+    - field.storage.block_content.field_brend
+  module:
+    - text
+id: block_content.brending.field_brend
+field_name: field_brend
+entity_type: block_content
+bundle: brending
+label: brend
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

@@ -1,0 +1,19 @@
+uuid: 72a6464a-8ea1-442c-acd5-b208685289d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.geolocation
+    - field.storage.block_content.field_address
+id: block_content.geolocation.field_address
+field_name: field_address
+entity_type: block_content
+bundle: geolocation
+label: Address
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

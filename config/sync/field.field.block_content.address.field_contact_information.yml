@@ -1,0 +1,31 @@
+uuid: 7e7d1899-fc72-451e-81d2-ef036c2e0b5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.address
+    - field.storage.block_content.field_contact_information
+    - paragraphs.paragraphs_type.address
+  module:
+    - entity_reference_revisions
+id: block_content.address.field_contact_information
+field_name: field_contact_information
+entity_type: block_content
+bundle: address
+label: 'Contact Information'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      address: address
+    negate: 0
+    target_bundles_drag_drop:
+      address:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

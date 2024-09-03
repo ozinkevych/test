@@ -1,0 +1,23 @@
+uuid: b48f2933-e4f3-4465-8a0a-400fe41faa30
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.d
+  module:
+    - views
+  theme:
+    - exam
+id: exam_exposedformdpage_1
+theme: exam
+region: header_main
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:d-page_1'
+settings:
+  id: 'views_exposed_filter_block:d-page_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+visibility: {  }

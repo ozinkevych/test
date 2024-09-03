@@ -1,0 +1,23 @@
+uuid: c189bed5-bb1d-4cee-bfc1-fab32e84553e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_clients_url
+    - node.type.client
+  module:
+    - link
+id: node.client.field_clients_url
+field_name: field_clients_url
+entity_type: node
+bundle: client
+label: 'Clients url'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

@@ -1,0 +1,19 @@
+uuid: 372c9e8b-a9fe-4662-8a7e-5af8e6921cd2
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_clients_url
+field_name: field_clients_url
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,40 @@
+uuid: 03aa1359-675b-4b63-9ab0-72af06b92968
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.brending
+    - field.field.block_content.brending.field_brend
+    - field.field.block_content.brending.field_text
+  module:
+    - text
+id: block_content.brending.default
+targetEntityType: block_content
+bundle: brending
+mode: default
+content:
+  field_brend:
+    type: text_textfield
+    weight: 26
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_text:
+    type: text_textfield
+    weight: 27
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

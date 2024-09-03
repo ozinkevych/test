@@ -1,0 +1,19 @@
+uuid: 950f0540-e5a3-479d-bcb2-0fe03b9aafd8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_country
+    - paragraphs.paragraphs_type.address
+id: paragraph.address.field_country
+field_name: field_country
+entity_type: paragraph
+bundle: address
+label: Country
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

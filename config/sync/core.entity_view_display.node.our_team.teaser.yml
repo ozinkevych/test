@@ -1,0 +1,177 @@
+uuid: 3ba09c14-2c4e-433e-a94f-b6e8a344e0b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.our_team.body
+    - field.field.node.our_team.field_image_media
+    - field.field.node.our_team.field_position
+    - field.field.node.our_team.field_social_media
+    - node.type.our_team
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          529b7128-18aa-44bf-8ec2-74668fdfa282:
+            uuid: 529b7128-18aa-44bf-8ec2-74668fdfa282
+            region: content
+            configuration:
+              id: 'field_block:node:our_team:field_image_media'
+              label: Image
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: content
+                  image_style: ''
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          8a0f5fa5-4045-4095-b167-125fe575bf35:
+            uuid: 8a0f5fa5-4045-4095-b167-125fe575bf35
+            region: content
+            configuration:
+              id: 'field_block:node:our_team:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          18b29ca0-886a-4d6d-b085-4ce32f7b32c1:
+            uuid: 18b29ca0-886a-4d6d-b085-4ce32f7b32c1
+            region: content
+            configuration:
+              id: 'field_block:node:our_team:field_position'
+              label: Position
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          b7ee2d61-5e55-4780-9db5-03a357a0f25d:
+            uuid: b7ee2d61-5e55-4780-9db5-03a357a0f25d
+            region: content
+            configuration:
+              id: 'extra_field_block:node:our_team:links'
+              label: Links
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                settings: {  }
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          4e56b5ae-fa48-4287-b570-06af92879c74:
+            uuid: 4e56b5ae-fa48-4287-b570-06af92879c74
+            region: first
+            configuration:
+              id: 'field_block:node:our_team:field_social_media'
+              label: 'Social Media'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: social_media_links_field_default
+                label: hidden
+                settings:
+                  appearance:
+                    orientation: h
+                    show_name: 0
+                  link_attributes:
+                    target: '<none>'
+                    rel: '<none>'
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          d6faf7dc-fde9-447e-8457-fe5b8f56071c:
+            uuid: d6faf7dc-fde9-447e-8457-fe5b8f56071c
+            region: second
+            configuration:
+              id: 'extra_field_block:node:our_team:flag_like'
+              label: 'Flag: <em class="placeholder">Like</em>'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.our_team.teaser
+targetEntityType: node
+bundle: our_team
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  flag_like:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_image_media: true
+  field_position: true
+  field_social_media: true
+  likes: true

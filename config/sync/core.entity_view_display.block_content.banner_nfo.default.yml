@@ -1,0 +1,38 @@
+uuid: a54d20e3-cc18-4feb-9cc5-579ebc03c49c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner_nfo
+    - field.field.block_content.banner_nfo.field_subtitle
+    - field.field.block_content.banner_nfo.field_text_banner
+    - field.field.block_content.banner_nfo.field_title
+  module:
+    - text
+id: block_content.banner_nfo.default
+targetEntityType: block_content
+bundle: banner_nfo
+mode: default
+content:
+  field_subtitle:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_text_banner:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

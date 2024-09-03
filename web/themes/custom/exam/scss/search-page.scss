@@ -1,63 +1,92 @@
 @import "variables";
 @import "mixin";
 
-  .node--view-mode-search-result{
-    padding: $gutter 0!important;
-    .node-content{
-      display: flex;
-      .field--name-title{
-        @include title_view;
-        a{
-          &:hover{
-            color: $blue!important;
+.views-element-container {
+
+  .search {
+
+    /* Styling for search result nodes */
+    .node--view-mode-search-result {
+      padding: $gutter 0 !important;
+
+      .node-content {
+        display: flex;
+
+        .field--name-title {
+          @include title_view;
+
+          a {
+            &:hover {
+              color: $blue !important;
+            }
           }
         }
-      }
-      .field--name-field-image-media{
-        float: none!important;
-        margin: 0!important;
-        padding-right: $gutterM;
-        img{
-          width: 150px!important;
-          height: 150px!important;
 
+        .field--name-field-image-media {
+          float: none !important;
+          margin: 0 !important;
+          padding-right: $gutterM;
+
+          img {
+            width: 150px !important;
+            height: 150px !important;
+          }
         }
-      }
-      .text-formatted{
+
+        .text-formatted {
           @include text_category;
           color: $gray;
           padding: 0 !important;
           margin: 0 !important;
+        }
       }
     }
-  }
-@media (max-width: 992px) {
-    .node--view-mode-search-result {
-      padding: 0!important;
+
+    /* Styling for empty views */
+    .view-empty {
+      padding-top: 50px;
+      display: flex;
+      justify-content: center;
+      @include title_view;
     }
+  }
 }
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .node--view-mode-search-result {
+    padding: 0 !important;
+  }
+}
+
 @media (max-width: 768px) {
-    .node--view-mode-search-result{
-      .node-content{
-        display: inline;
-        .layout--onecol{
-          &:nth-child(1){
-            float: left;
-          }
+  .node--view-mode-search-result {
+
+    .node-content {
+      display: inline;
+
+      .layout--onecol {
+        &:nth-child(1) {
+          float: left;
         }
-        .field--name-field-image-media{
-          margin: 0!important;
-          img {
-            width: 80px !important;
-            height: 80px!important;
-          }
+      }
+
+      .field--name-field-image-media {
+        margin: 0 !important;
+
+        img {
+          width: 80px !important;
+          height: 80px !important;
         }
-        .text-formatted{
-          font-size: 12px;
-        }
-        .field--name-title{
-          font-size: 16px !important;
-        }
+      }
+
+      .text-formatted {
+        font-size: 12px;
+      }
+
+      .field--name-title {
+        font-size: 16px !important;
       }
     }
   }
+}

@@ -1,26 +1,28 @@
 <?php
 
-use Drupal\Core\Form\FormStateInterface;
-//changes the menu item to a picture
+//changes the list item to a picture in the main menu
+use Drupal\Core\Menu\MenuLinkInterface;
+
 function exam_preprocess_menu(&$variables) {
-  if ($variables['menu_name'] == 'main') {
+  if ($variables['menu_name'] === 'main') {
     foreach ($variables['items'] as &$item) {
-      if ($item['url']->toString() == '/') {
+      if ($item['url']->toString() === '/') {
         $item['title'] = [
-          '#type' => 'inline_template',
-          '#template' => '<img src="{{ path }}" alt="Home" width="24" height="24">',
-          '#context' => [
-            'path' => '/themes/custom/exam/img/Homepage-menu.png',
-          ],
+          '#theme' => 'image',
+          '#uri' => '/themes/custom/exam/img/Homepage-menu.png',
+          '#alt' => t('Home'),
+          '#width' => 24,
+          '#height' => 24,
         ];
-        $item['attributes']->addClass('home-icon');
+        $item['attributes']['class'][] = 'home-icon';
       }
     }
   }
 }
+
 //creates a placeholder for the input
 function exam_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
-  if ($form_id == 'views_exposed_form') {
+  if ($form_id === 'views_exposed_form') {
     if (isset($form['keys'])) {
       $form['keys']['#attributes']['placeholder'] = t('Search');
     }

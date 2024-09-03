@@ -1,0 +1,36 @@
+uuid: b7d23ee4-8cc9-4fe2-9cee-e393ad559820
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.geolocation
+    - field.field.block_content.geolocation.field_address
+  module:
+    - simple_gmap
+id: block_content.geolocation.default
+targetEntityType: block_content
+bundle: geolocation
+mode: default
+content:
+  field_address:
+    type: simple_gmap
+    label: hidden
+    settings:
+      include_map: true
+      include_static_map: false
+      include_link: false
+      include_text: false
+      iframe_height: 310px
+      iframe_width: 100%
+      iframe_title: ''
+      static_scale: 1
+      zoom_level: 14
+      link_text: 'View larger map'
+      map_type: m
+      langcode: en
+      apikey: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

@@ -1,0 +1,22 @@
+uuid: 133aed6a-77db-4c81-8a55-6cf3c1264ccd
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.brending
+    - field.storage.block_content.field_text
+  module:
+    - text
+id: block_content.brending.field_text
+field_name: field_text
+entity_type: block_content
+bundle: brending
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

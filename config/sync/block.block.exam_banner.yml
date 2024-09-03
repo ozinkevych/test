@@ -1,0 +1,30 @@
+uuid: 30d18093-ae6f-49ff-871d-ef4c65ce6bcb
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner:ddef6f6c-1a97-4f81-b714-369d19d9b37a'
+  module:
+    - block_content
+    - system
+  theme:
+    - exam
+id: exam_banner
+theme: exam
+region: banner
+weight: 0
+provider: null
+plugin: 'block_content:ddef6f6c-1a97-4f81-b714-369d19d9b37a'
+settings:
+  id: 'block_content:ddef6f6c-1a97-4f81-b714-369d19d9b37a'
+  label: 'Banner '
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

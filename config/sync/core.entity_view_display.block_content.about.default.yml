@@ -1,0 +1,110 @@
+uuid: 2bdc46ec-dbbb-4696-8f71-ec3385d02455
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.about
+    - field.field.block_content.about.body
+    - field.field.block_content.about.field_more_detals
+  module:
+    - layout_builder
+    - layout_discovery
+    - link
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          10581979-bc36-4663-b1e8-103ebb9227c2:
+            uuid: 10581979-bc36-4663-b1e8-103ebb9227c2
+            region: content
+            configuration:
+              id: 'field_block:block_content:about:info'
+              label: 'Block description'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          cd8c4abe-c951-479e-baac-f470632ab303:
+            uuid: cd8c4abe-c951-479e-baac-f470632ab303
+            region: content
+            configuration:
+              id: 'field_block:block_content:about:body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          b52f5ad6-a507-4477-b118-95fa76148362:
+            uuid: b52f5ad6-a507-4477-b118-95fa76148362
+            region: content
+            configuration:
+              id: 'field_block:block_content:about:field_more_detals'
+              label: 'More detals'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: link
+                label: hidden
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: '0'
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
+id: block_content.about.default
+targetEntityType: block_content
+bundle: about
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_more_detals:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

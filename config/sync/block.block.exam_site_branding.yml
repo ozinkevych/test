@@ -1,0 +1,25 @@
+uuid: fcec0c1b-7c5a-4364-a6a7-0a9d12f0759c
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - exam
+_core:
+  default_config_hash: k2OubPDFVFSuVulwFPnL0U-_cfgJNUPCWtKw4SVzza8
+id: exam_site_branding
+theme: exam
+region: header_top
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }
