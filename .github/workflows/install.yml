@@ -1,7 +1,5 @@
 name: Install boilerplate
-
 on: [push]
-
 env:
   DOCKSAL_SSH_AGENT_USE_HOST: 0
   DOCKSAL_DNS_DISABLED: 1
@@ -15,10 +13,21 @@ jobs:
         run: curl -fsSL https://get.docksal.io | bash
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Create .docksal config
+      - name: Create Docksal configuration
         run: |
-          mkdir -p .docksal
-          echo "config content here" > .docksal/docksal.yml
+          mkdir -p .docksal/commands
+          echo "DOCKSAL_STACK=default" > .docksal/docksal.env
+          echo "version: '2.1'
+          services:
+            cli:
+              image: docksal/cli:php7.4-3.0" > .docksal/docksal.yml
+          echo '#!/usr/bin/env bash
+          fin project start
+          composer install
+          fin drush site-install -y' > .docksal/commands/init
+          echo '#!/usr/bin/env bash
+          fin drush status' > .docksal/commands/test
+          chmod +x .docksal/commands/init .docksal/commands/test
       - name: fin sysinfo
         run: fin sysinfo
       - name: Install boilerplate
