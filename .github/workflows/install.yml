@@ -1,4 +1,3 @@
-name: Install boilerplate
 on: [push]
 env:
   DOCKSAL_SSH_AGENT_USE_HOST: 0
@@ -20,10 +19,10 @@ jobs:
           echo "version: '2.1'
           services:
             cli:
-              image: docksal/cli:php7.4-3.0" > .docksal/docksal.yml
+              image: docksal/cli:php8.1-3.1" > .docksal/docksal.yml
           echo '#!/usr/bin/env bash
           fin project start
-          composer install
+          fin composer install
           fin drush site-install -y' > .docksal/commands/init
           echo '#!/usr/bin/env bash
           fin drush status' > .docksal/commands/test
