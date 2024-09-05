@@ -1,3 +1,4 @@
+name: Install boilerplate
 on: [push]
 env:
   DOCKSAL_SSH_AGENT_USE_HOST: 0
@@ -15,23 +16,38 @@ jobs:
       - name: Create Docksal configuration
         run: |
           mkdir -p .docksal/commands
-          echo "DOCKSAL_STACK=default" > .docksal/docksal.env
+          cat << EOF > .docksal/docksal.env
+          DOCKSAL_STACK=default
+          MYSQL_ROOT_PASSWORD=root
+          MYSQL_DATABASE=drupal
+          MYSQL_USER=drupal
+          MYSQL_PASSWORD=drupal
+          EOF
           echo "version: '2.1'
           services:
             cli:
-              image: docksal/cli:php8.1-3.1" > .docksal/docksal.yml
-          echo '#!/usr/bin/env bash
+              image: docksal/cli:php8.1-3.1
+            db:
+              image: docksal/db:1.1-mysql-5.7
+          " > .docksal/docksal.yml
+          cat << EOF > .docksal/commands/init
+          #!/usr/bin/env bash
           fin project start
           fin composer install
-          fin drush site-install -y' > .docksal/commands/init
-          echo '#!/usr/bin/env bash
-          fin drush status' > .docksal/commands/test
+          # Wait for MySQL to be ready
+          fin exec cli 'while ! mysqladmin ping -h db --silent; do sleep 1; done'
+          fin drush si -y --db-url=mysql://drupal:drupal@db/drupal
+          EOF
+          cat << EOF > .docksal/commands/test
+          #!/usr/bin/env bash
+          fin drush status
+          EOF
           chmod +x .docksal/commands/init .docksal/commands/test
       - name: fin sysinfo
         run: fin sysinfo
       - name: Install boilerplate
         run: fin init
-      - name: Test boilerplate
-        run: fin test
+      - name: Check Drupal status
+        run: fin drush status
       - name: fin config
         run: fin config
