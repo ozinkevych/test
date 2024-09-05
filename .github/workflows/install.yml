@@ -13,10 +13,14 @@ jobs:
     steps:
       - name: Install Docksal
         run: curl -fsSL https://get.docksal.io | bash
-      - name: fin sysinfo
-        run: fin sysinfo
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Create .docksal config
+        run: |
+          mkdir -p .docksal
+          echo "config content here" > .docksal/docksal.yml
+      - name: fin sysinfo
+        run: fin sysinfo
       - name: Install boilerplate
         run: fin init
       - name: Test boilerplate
